@@ -1,0 +1,6 @@
+repo: demo-v-next
+branch: main
+commit: df634529ba7ed2cf1fbfd1ddeb71924a6ae804f7
+project: commerce-algolia
+variant: default
+date/time: 10/6/2023, 10:13:48 AM

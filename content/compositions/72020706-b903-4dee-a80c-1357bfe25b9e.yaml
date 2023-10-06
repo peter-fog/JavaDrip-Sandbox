@@ -1,0 +1,69 @@
+composition:
+  _name: Hero (cs)
+  _id: 72020706-b903-4dee-a80c-1357bfe25b9e
+  type: hero
+  parameters:
+    image:
+      type: image
+      value: ${#jptr:/Hero Content/entry/image}
+    title:
+      type: text
+      value: ${#jptr:/Hero Content/entry/title}
+    titleStyle:
+      type: tp-title-style-parameter
+      value: h1
+    description:
+      type: text
+      value: ${#jptr:/Hero Content/entry/description}
+  _dataResources:
+    Hero Content:
+      type: contentstackHero
+      variables:
+        query: ''
+        entry_uid: blt0443451b1f5b9d75
+        content_type_uid: content_block
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    variants: true
+    parameters:
+      delay: 'yes'
+      image: 'yes'
+      title: 'yes'
+      video: 'yes'
+      duration: 'yes'
+      marginTop: 'yes'
+      objectFit: 'yes'
+      textColor: 'yes'
+      fullHeight: 'yes'
+      paddingTop: 'yes'
+      titleStyle: 'yes'
+      description: 'yes'
+      eyebrowText: 'yes'
+      marginBottom: 'yes'
+      overlayColor: 'yes'
+      animationType: 'yes'
+      group_content: 'yes'
+      paddingBottom: 'yes'
+      backgroundType: 'yes'
+      overlayOpacity: 'yes'
+      containerVariant: 'yes'
+      group_primaryCta: 'yes'
+      oneByOneAnimation: 'yes'
+      primaryButtonCopy: 'yes'
+      primaryButtonLink: 'yes'
+      group_secondaryCta: 'yes'
+      primaryButtonStyle: 'yes'
+      group_imageSettings: 'yes'
+      secondaryButtonCopy: 'yes'
+      secondaryButtonLink: 'yes'
+      playAnimationTrigger: 'yes'
+      secondaryButtonStyle: 'yes'
+      primaryButtonAnimationType: 'yes'
+      secondaryButtonAnimationType: 'yes'
+created: '2023-09-28T09:57:04.894734+00:00'
+modified: '2023-09-28T12:09:36.201976+00:00'
+pattern: true
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/v1/csk-preview-images/UniformTheme/Hero_preview_image
+categoryId: ea001653-1f96-4f07-9187-a1626a4965e5

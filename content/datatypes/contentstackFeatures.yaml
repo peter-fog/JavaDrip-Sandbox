@@ -1,0 +1,60 @@
+id: contentstackFeatures
+displayName: Features
+ttl: 30
+path: /content_types/${content_type_uid}/entries?${include}
+custom:
+  include: 2
+  imagePath: image
+  searchFieldIds:
+    - product_id
+  allowContentTypeUids:
+    - product_feature
+  enableFilterByLocale: false
+method: GET
+purgeKey: 20bc7f95-4dd8-4f04-964a-7505dcb62bf8
+archetype: queryEntry
+variables:
+  asc:
+    type: text
+    default: ''
+    displayName: Order by asc
+  desc:
+    type: text
+    default: ''
+    displayName: Order by desc
+  limit:
+    type: text
+    default: '5'
+    displayName: Limit
+  query:
+    type: text
+    default: ''
+    displayName: Query
+  locale:
+    type: text
+    default: ''
+    displayName: Locale
+  include:
+    type: text
+    default: ''
+    displayName: Include
+  content_type_uid:
+    type: text
+    default: product_feature
+    displayName: Entry Type
+parameters:
+  - key: query
+    value: ${query}
+  - key: limit
+    value: ${limit}
+  - key: asc
+    value: ${asc}
+  - key: desc
+    value: ${desc}
+  - key: locale
+    value: ${locale}
+longTermCache:
+  enabled: false
+  ttlInHours: 24
+dataSourceId: contentstackDataSource
+allowedOnComponents: []

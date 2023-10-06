@@ -1,0 +1,524 @@
+composition:
+  _name: Custom Product Details Page (new design)
+  _id: f5151822-8342-4f14-9fa4-3279620a70a6
+  _slug: espresso-gpt-145
+  type: productDetailsPage
+  parameters:
+    pageTitle:
+      type: text
+      value: ${#jptr:/Product Content/results/0/name} Details Page
+    pageSubcategories:
+      type: json
+      value: ${#jptr:/Product Content/results/0/subCategories}
+  slots:
+    pageFooter:
+      - _id: f8566a73-f4e9-4be2-85e7-2ba42a9a4a71
+        type: footer
+        _pattern: 77213da4-3e05-4540-ba7b-9f6c040c2989
+    pageHeader:
+      - _id: c0724a48-c128-4f25-be18-2f6febd338e3
+        type: header
+        _pattern: 540af74e-e65b-463e-a949-4e2fe22df873
+    pageContent:
+      - _id: 130bc595-75e7-4e68-91f9-227d3d081604
+        type: hero
+        _pattern: b60d0fe0-c4cd-41f5-a2b7-e75f565095f6
+        _dataResources:
+          Hero Content:
+            type: contentfulHero
+            variables:
+              locale: ''
+              entryIds: 2pfYNnq5HbfwqUgKZjYFDQ
+      - _id: ed780c1a-4fe0-4c67-a30b-34a800c729d5
+        type: productInfo
+        _pattern: 74cc4c81-50de-4bcc-a05a-00ad738a3f45
+        _dataResources:
+          Product Content:
+            type: algoliaProduct
+            variables:
+              body: >-
+                {"requests":[{"indexName":"products-ngm","objectID":"espresso-gpt-145"}]}
+              entryIds: espresso-gpt-145
+              facetValue: ''
+      - _id: 0e8b69e5-8fa8-4bc8-89e5-5adbfccc6349
+        type: container
+        slots:
+          container-inner:
+            - _id: 91a8fb0f-ff72-4b33-b014-10b3deff3d22
+              type: grid
+              _pattern: 6de581e2-9bce-47e7-8ec8-18075bae863f
+              _dataResources:
+                Features Content:
+                  type: contentfulFeatures
+                  variables:
+                    limit: '4'
+                    order: ''
+                    locale: ''
+                    filters: ''
+                    keyword: espresso-gpt-145
+                    sortOrder: asc
+                    sortFieldId: ''
+                    contentTypeId: productFeature
+                    advancedFilters: '[]'
+                    contentTypeQuery: content_type=productFeature
+        parameters:
+          title:
+            type: text
+            value: Features
+          paddingTop:
+            type: select
+            value: Medium
+          paddingBottom:
+            type: select
+            value: Small
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+      - _id: 1d5349a8-91e6-427e-bae8-308c78512d7e
+        type: productGalleryDAM
+        variant: fluentContent
+        parameters:
+          items:
+            type: asset
+            value:
+              - id: 552a5258-ffc7-4a18-b522-d888045bb069
+                url: >-
+                  https://res.cloudinary.com/uniform-demos/image/upload/v1693309094/products/EspressoGPT_image_1.jpg
+                source: custom-url
+              - id: 7b63e1b4-5a2a-4268-a8ef-8136fad35158
+                url: >-
+                  https://res.cloudinary.com/uniform-demos/image/upload/v1693566380/products/EspressoGPT_image_2.jpg
+                source: custom-url
+              - id: e756936d-9e2c-46fa-b36e-06e64b739b63
+                url: >-
+                  https://canary-img.uniform.global/p/_egH9JFXRYSLCCOJDPWRAQ/wl4o3BJNR8qhp57ezsFrFQ-EspressoGPT_image_3.jpg
+                type: image
+                title: EspressoGPT_image_3.jpg
+                width: 743
+                height: 480
+                source: uniform-assets
+                mediaType: image/jpeg
+                description: ''
+              - id: 788737df-d806-4cf8-be93-61f5d947c4b6
+                url: >-
+                  https://canary-img.uniform.global/p/_egH9JFXRYSLCCOJDPWRAQ/9RB7RqbTRWKLEB7YKHqPhQ-EspressoGPT_image_4.png
+                type: image
+                title: EspressoGPT_image_4.png
+                width: 743
+                height: 480
+                source: uniform-assets
+                mediaType: image/png
+                description: ''
+              - id: dfa6bfde-d7b6-4eb8-ae58-964b3050ad67
+                url: >-
+                  https://canary-img.uniform.global/p/_egH9JFXRYSLCCOJDPWRAQ/361OuylSSVKJMs4EaaEg0A-EspressoGPT_image_5.png
+                type: image
+                title: EspressoGPT_image_5.png
+                width: 743
+                height: 480
+                source: uniform-assets
+                mediaType: image/png
+                description: ''
+          title:
+            type: text
+            value: Product Gallery
+          duration:
+            type: select
+            value: medium
+          paddingTop:
+            type: select
+            value: Small
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h4
+          animationType:
+            type: select
+            value: dynamic
+          paddingBottom:
+            type: select
+            value: Small
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+          oneByOneAnimation:
+            type: checkbox
+            value: true
+      - _id: 363e324f-d1e9-4598-902c-9e88a6dde498
+        type: container
+        slots:
+          container-inner:
+            - _id: 40435ffe-df01-418f-aff2-14ad502c3079
+              type: grid
+              slots:
+                grid-inner:
+                  - _id: 4632dc61-18a4-4705-878d-553419bc3bd9
+                    type: hero
+                    _pattern: b60d0fe0-c4cd-41f5-a2b7-e75f565095f6
+                    _dataResources:
+                      Hero Content:
+                        type: contentfulHero
+                        variables:
+                          locale: ''
+                          entryIds: 4CyZqt3kc1qfLPfT86c6Ry
+                  - _id: 3b2a296a-ca16-48b2-9414-8da42c540489
+                    type: hero
+                    _pattern: b60d0fe0-c4cd-41f5-a2b7-e75f565095f6
+                    _dataResources:
+                      Hero Content:
+                        type: contentfulHero
+                        variables:
+                          locale: ''
+                          entryIds: 50KQXyU1tM0s4qVZMZDng2
+              parameters:
+                gapX:
+                  type: tp-slider-parameter
+                  value: none
+                gapY:
+                  type: tp-slider-parameter
+                  value: large
+                title:
+                  type: text
+                  value: Product Story
+                columnsCount:
+                  type: tp-slider-parameter
+                  value: '1'
+        parameters:
+          title:
+            type: text
+            value: Product Story
+          paddingTop:
+            type: select
+            value: Small
+          paddingBottom:
+            type: select
+            value: Small
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+      - _id: c9c97712-56ef-40f5-9074-d696f89ab7dc
+        type: container
+        slots:
+          container-inner:
+            - _id: 60621ed1-cbe1-406f-bdf5-6c7bf51253f1
+              type: grid
+              _pattern: 4377455e-e1bd-4d33-a602-d0fceaea1e6a
+              _dataResources:
+                Reviews Content:
+                  type: contentfulReviews
+                  variables:
+                    limit: '2'
+                    order: ''
+                    locale: ''
+                    filters: ''
+                    keyword: espresso-gpt-145
+                    sortOrder: asc
+                    sortFieldId: ''
+                    contentTypeId: testimonial
+                    advancedFilters: '[]'
+                    contentTypeQuery: content_type=testimonial
+        parameters:
+          title:
+            type: text
+            value: Reviews
+          paddingTop:
+            type: select
+            value: Small
+          paddingBottom:
+            type: select
+            value: Small
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+      - _id: 095d7ced-e242-4861-9489-79eb63f89f8b
+        type: container
+        slots:
+          container-inner:
+            - _id: 6105f025-b3d9-4364-baae-53ca5ea14163
+              type: accordion
+              _pattern: 1c7dcf4b-414b-4b96-8b47-0c60d66af892
+              _dataResources:
+                FAQ Content:
+                  type: contentfulFAQs
+                  variables:
+                    locale: ''
+                    entryIds: >-
+                      5uEy4vVV7k50hQt4R6vzLU,KXpACnDBAyIv6bA4Kw4f8,5ufbsDupZTpJ7Aci58AAPI
+                FAQ Header Content:
+                  type: contentfulFAQs
+                  variables:
+                    locale: ''
+                    entryIds: 60PX6lmBgkFKF9SAy1BkDR
+        parameters:
+          title:
+            type: text
+            value: Accordion
+          paddingTop:
+            type: select
+            value: Small
+          paddingBottom:
+            type: select
+            value: Small
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+      - _id: 612ef2a4-dece-4593-90cf-1a7a62f1d824
+        type: hero
+        _pattern: b60d0fe0-c4cd-41f5-a2b7-e75f565095f6
+        _dataResources:
+          Hero Content:
+            type: contentfulHero
+            variables:
+              locale: ''
+              entryIds: 10wIYDmcVWumtUQWjsIJ67
+      - _id: 3b009fbb-5669-4365-aade-ab907f175e28
+        type: container
+        slots:
+          container-inner:
+            - _id: 32d49e47-7994-4424-8afb-8c23387b5f6f
+              type: cardBlock
+              _pattern: c8b897c9-19ea-4bf8-9794-52b357b9901b
+              _dataResources:
+                Recommend Products Content:
+                  type: algoliaRecommendProducts
+                  variables:
+                    body: >-
+                      {"requests":[{"threshold":0,"maxRecommendations":5,"objectID":"espresso-gpt-145","model":"related-products","indexName":"products-ngm","queryParameters":{"query":"","facetFilters":[]}}]}
+                    path: /*/recommendations
+                    query: ''
+                    objectID: espresso-gpt-145
+                    threshold: '0'
+                    facetValues: ''
+                    maxRecommendations: '5'
+        parameters:
+          title:
+            type: text
+            value: Algolia Recommend Products
+          paddingTop:
+            type: select
+            value: Small
+          paddingBottom:
+            type: select
+            value: Medium
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+  _dataResources:
+    Product Content:
+      type: algoliaProduct
+      variables:
+        body: >-
+          {"requests":[{"indexName":"products-ngm","objectID":"espresso-gpt-145"}]}
+        entryIds: espresso-gpt-145
+        facetValue: ''
+  _overrides:
+    130bc595-75e7-4e68-91f9-227d3d081604:
+      variant: backgroundImage
+      parameters:
+        video:
+          type: cloudinary-video
+          value:
+            - alt: ''
+              url: >-
+                https://res.cloudinary.com/uniform-demos/video/upload/v1693387616/videos/pexels-cristian-rojas.mp4
+              uuid: 3ee60a40-7e66-4223-954e-ab07f3a09729
+              width: '1920'
+              format: mp4
+              height: '1080'
+              caption: ''
+              version: 1693387616
+              publicId: videos/pexels-cristian-rojas
+              createdAt: '2023-08-30T09:26:56Z'
+              previewUrl: >-
+                https://res.cloudinary.com/uniform-demos/video/upload/q_auto,f_auto,w_150/videos/pexels-cristian-rojas.mp4
+              resourceType: video
+              transformation: ''
+        duration:
+          type: select
+          value: medium
+        objectFit:
+          type: select
+          value: cover
+        textColor:
+          type: select
+          value: Light
+        fullHeight:
+          type: checkbox
+          value: true
+        paddingTop:
+          type: select
+          value: None
+        eyebrowText:
+          type: text
+          value: ESPRESSOGPT
+        overlayColor:
+          type: tp-color-style-parameter
+          value: base-300
+        animationType:
+          type: select
+          value: dynamic
+        paddingBottom:
+          type: select
+          value: None
+        overlayOpacity:
+          type: tp-slider-parameter
+          value: 50%
+        containerVariant:
+          type: select
+          value: fluentContent
+        oneByOneAnimation:
+          type: checkbox
+          value: true
+    32d49e47-7994-4424-8afb-8c23387b5f6f:
+      parameters:
+        title:
+          type: text
+          value: Recommend Products
+        textColor:
+          type: select
+          value: Light
+        buttonStyle:
+          type: tp-button-style-parameter
+          value: secondary
+    3b2a296a-ca16-48b2-9414-8da42c540489:
+      variant: imageRight
+      parameters:
+        duration:
+          type: select
+          value: medium
+        eyebrowText:
+          type: text
+          value: CELEBRATE THE ART OF COFFEE MAKING
+        animationType:
+          type: select
+          value: dynamic
+        oneByOneAnimation:
+          type: checkbox
+          value: true
+    4632dc61-18a4-4705-878d-553419bc3bd9:
+      variant: imageLeft
+      parameters:
+        duration:
+          type: select
+          value: medium
+        eyebrowText:
+          type: text
+          value: MONITOR THE PERFECT BREW
+        animationType:
+          type: select
+          value: dynamic
+        oneByOneAnimation:
+          type: checkbox
+          value: true
+    612ef2a4-dece-4593-90cf-1a7a62f1d824:
+      variant: twoColumns
+      parameters:
+        duration:
+          type: select
+          value: medium
+        objectFit:
+          type: select
+          value: cover
+        textColor:
+          type: select
+          value: Light
+        paddingTop:
+          type: select
+          value: None
+        overlayColor:
+          type: tp-color-style-parameter
+          value: base-300
+        animationType:
+          type: select
+          value: dynamic
+        paddingBottom:
+          type: select
+          value: None
+        overlayOpacity:
+          type: tp-slider-parameter
+          value: 50%
+        containerVariant:
+          type: select
+          value: fluentContent
+        oneByOneAnimation:
+          type: checkbox
+          value: true
+    c0724a48-c128-4f25-be18-2f6febd338e3:
+      parameters:
+        syntheticGap:
+          type: tp-slider-parameter
+          value: None
+    ed780c1a-4fe0-4c67-a30b-34a800c729d5:
+      parameters:
+        image:
+          type: image
+          value: ${#jptr:/Product Content/results/0/images/5/url}
+        duration:
+          type: select
+          value: medium
+        features:
+          type: json
+          value:
+            - Free shipping
+            - 3 year warranty
+            - Starter bean kit
+        subTitle:
+          type: text
+          value: Where modern technology meets timeless taste
+        fullHeight:
+          type: checkbox
+          value: null
+        eyebrowText:
+          type: text
+          value: EXPERIENCE A REVOLUTION
+        animationType:
+          type: select
+          value: dynamic
+        overlayOpacity:
+          type: tp-slider-parameter
+          value: 10%
+        oneByOneAnimation:
+          type: checkbox
+          value: true
+        primaryButtonAnimationType:
+          type: select
+          value: dynamic
+        secondaryButtonAnimationType:
+          type: select
+          value: dynamic
+    32d49e47-7994-4424-8afb-8c23387b5f6f|98ef4404-7adc-4d1b-bd62-e17bc229352b:
+      parameters:
+        duration:
+          type: select
+          value: medium
+        textColor:
+          type: select
+          value: Light
+        buttonLink:
+          type: link
+          value:
+            path: /products/:product-slug
+            type: projectMapNode
+            nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+            dynamicInputValues:
+              product-slug: ${#jptr:/Product Content results Loop Item/objectID}
+        buttonStyle:
+          type: tp-button-style-parameter
+          value: secondary
+        animationType:
+          type: select
+          value: static
+        buttonAnimationType:
+          type: select
+          value: dynamic
+    91a8fb0f-ff72-4b33-b014-10b3deff3d22|8b05735f-2206-4fdb-8836-73a6a560a01c:
+      parameters:
+        duration:
+          type: select
+          value: medium
+        animationType:
+          type: select
+          value: dynamic
+created: '2023-09-26T08:40:28.028516+00:00'
+modified: '2023-09-26T08:40:28.028516+00:00'
+pattern: false

@@ -1,0 +1,73 @@
+composition:
+  _name: Hero - Testimonial
+  _id: 39466862-6b5f-416c-b01a-4c834aa76c2c
+  type: hero
+  variant: imageLeft
+  parameters:
+    image:
+      type: image
+      value: ${#jptr:/Reviews Content/items/0/fields/picture}
+    title:
+      type: text
+      value: ${#jptr:/Reviews Content/items/0/fields/title}
+    objectFit:
+      type: select
+      value: contain
+    textColor:
+      type: select
+      value: Dark
+    titleStyle:
+      type: tp-title-style-parameter
+      value: h3
+    description:
+      type: text
+      value: ${#jptr:/Reviews Content/items/0/fields/experience}
+    eyebrowText:
+      type: text
+      value: >-
+        ${#jptr:/Reviews Content/items/0/fields/firstName} - ${#jptr:/Reviews
+        Content/items/0/fields/stars}
+  _dataResources:
+    Reviews Content:
+      type: contentfulReviews
+      variables:
+        locale: ''
+        entryIds: 2tqL3PvUHnO55QXZ0ZivC5
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    variants: true
+    parameters:
+      delay: 'yes'
+      image: 'yes'
+      title: 'yes'
+      video: 'yes'
+      duration: 'yes'
+      marginTop: 'yes'
+      objectFit: 'yes'
+      textColor: 'yes'
+      fullHeight: 'yes'
+      paddingTop: 'yes'
+      titleStyle: 'yes'
+      description: 'yes'
+      eyebrowText: 'yes'
+      marginBottom: 'yes'
+      overlayColor: 'yes'
+      animationType: 'yes'
+      paddingBottom: 'yes'
+      backgroundType: 'yes'
+      overlayOpacity: 'yes'
+      containerVariant: 'yes'
+      oneByOneAnimation: 'yes'
+      primaryButtonCopy: 'yes'
+      primaryButtonLink: 'yes'
+      primaryButtonStyle: 'yes'
+      secondaryButtonCopy: 'yes'
+      secondaryButtonLink: 'yes'
+      playAnimationTrigger: 'yes'
+      secondaryButtonStyle: 'yes'
+      primaryButtonAnimationType: 'yes'
+      secondaryButtonAnimationType: 'yes'
+created: '2023-09-28T11:32:30.005165+00:00'
+modified: '2023-09-28T12:09:46.788815+00:00'
+pattern: true

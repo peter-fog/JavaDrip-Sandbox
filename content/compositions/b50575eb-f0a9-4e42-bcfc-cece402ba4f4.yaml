@@ -1,0 +1,65 @@
+composition:
+  _name: Contentful Article Details Page
+  _id: b50575eb-f0a9-4e42-bcfc-cece402ba4f4
+  _slug: ':article-slug'
+  type: articleDetailsPage
+  parameters:
+    pageTitle:
+      type: text
+      value: ${#jptr:/Article by Slug Content/items/0/fields/title} Details Page
+  slots:
+    pageFooter:
+      - _id: 4251b7c3-46ec-4dbb-a147-13593f6ecdb9
+        type: footer
+        _pattern: 77213da4-3e05-4540-ba7b-9f6c040c2989
+    pageHeader:
+      - _id: bbff58f6-ff7a-404e-8f31-9c7380670971
+        type: header
+        _pattern: 540af74e-e65b-463e-a949-4e2fe22df873
+    pageContent:
+      - _id: b94920b7-3e51-4802-86dd-66a8808df450
+        type: spacer
+        parameters:
+          thickness:
+            type: tp-slider-parameter
+            value: 10px
+      - _id: f77ff3c1-039f-4065-bfaf-8ddf967adbf3
+        type: breadcrumbs
+        parameters:
+          title:
+            type: text
+            value: Article Details Page
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: 4eb1e79e-6508-4183-b963-3f088c25c2f1
+        type: content
+        _pattern: 715b544e-11ac-4418-9b8e-c6a294db5169
+        _dataResources:
+          Article by Slug Content:
+            type: contentfulArticleBySlug
+            variables:
+              slug: ${article-slug}
+              locale: ''
+              slugField: fields.slug[in]
+              contentType: article
+  _dataResources:
+    Article by Slug Content:
+      type: contentfulArticleBySlug
+      variables:
+        slug: ${article-slug}
+        locale: ''
+        slugField: fields.slug[in]
+        contentType: article
+created: '2023-09-26T08:40:26.828743+00:00'
+modified: '2023-09-26T08:40:26.828743+00:00'
+pattern: false

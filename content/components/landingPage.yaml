@@ -1,0 +1,334 @@
+# yaml-language-server: $schema=<https://canary.uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://canary.uniform.app/schemas/json-schema/component-definition/v1.json
+id: landingPage
+name: Landing Page
+icon: file-document
+parameters:
+  - id: pageTitle
+    name: Page Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: group_metaData
+    name: Meta Data
+    type: group
+    typeConfig:
+      childrenParams:
+        - pageMetaDescription
+        - pageKeywords
+  - id: pageMetaDescription
+    name: Page Meta Description
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+      linesCount: '5'
+  - id: pageKeywords
+    name: Page Keywords
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+  - id: group_openGraph
+    name: Open Graph
+    type: group
+    typeConfig:
+      childrenParams:
+        - openGraphTitle
+        - openGraphImage
+        - openGraphType
+        - openGraphDescription
+        - overlayTitleToOgImage
+  - id: openGraphTitle
+    name: Open Graph Title
+    type: text
+    helpText: page head title
+    typeConfig: null
+  - id: openGraphDescription
+    name: Open Graph Description
+    type: text
+    helpText: >-
+      used to set `og:description`. If not set, `Page Meta Description` will be
+      used.
+    typeConfig:
+      multiline: true
+      linesCount: '5'
+  - id: openGraphImage
+    name: Open Graph Image
+    type: image
+    helpText: This will set og:image
+    typeConfig: null
+  - id: overlayTitleToOgImage
+    name: Overlay Title over Open Graph Image?
+    type: checkbox
+    helpText: if set, renders the `og:title` over the image dynamically
+    typeConfig: null
+  - id: openGraphType
+    name: Open Graph Type
+    type: select
+    helpText: sets the value of `og:type` (defalts to "website" if not specified)
+    typeConfig:
+      options:
+        - text: website
+          value: website
+        - text: video
+          value: video
+        - text: article
+          value: article
+  - id: group_twitter
+    name: Twitter
+    type: group
+    typeConfig:
+      childrenParams:
+        - twitterDescription
+        - twitterTitle
+        - twitterImage
+        - overlayTitleToTwitterImage
+        - twitterCard
+  - id: twitterTitle
+    name: Twitter Title
+    type: text
+    helpText: Sets `twitter:title`. Fallback to Page Title if not set.
+    typeConfig: null
+  - id: twitterDescription
+    name: Twitter Description
+    type: text
+    helpText: >-
+      Sets `twitter:description`. Falls back to `Page Meta Description` if not
+      set
+    typeConfig:
+      multiline: true
+      linesCount: '5'
+  - id: twitterImage
+    name: Twitter Image
+    type: image
+    helpText: Sets `twitter:image`. Fallsback to `og:image` if not set.
+    typeConfig: null
+  - id: overlayTitleToTwitterImage
+    name: Overlay Title to Twitter Image?
+    type: checkbox
+    helpText: if set, overlays content of `twitter:title` over the image dynamically
+    typeConfig: null
+  - id: twitterCard
+    name: Twitter Card
+    type: select
+    helpText: Sets the value of `twitter:card`. If not set, defaults to `summary`.
+    typeConfig:
+      options:
+        - text: summary
+          value: summary
+        - text: summary_large_image
+          value: summary_large_image
+        - text: app
+          value: app
+        - text: player
+          value: player
+categoryId: 31fcffb0-aead-4256-8e49-4d50cc28aa29
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/v1/csk-preview-images/UniformTheme/page_preview_image
+useTeamPermissions: true
+slots:
+  - id: pageHeader
+    name: Page Header
+    maxComponents: 1
+    minComponents: 1
+    allowedComponents:
+      - header
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: pageContent
+    name: Page Content
+    allowedComponents:
+      - $personalization
+      - divider
+      - breadcrumbs
+      - grid
+      - $p:74b7ddb6-f6f0-4fd8-9057-cc18ab92094b
+      - container
+      - spacer
+      - emailSignupForm
+      - couponHero
+      - $p:b60d0fe0-c4cd-41f5-a2b7-e75f565095f6
+      - $p:9582f2a8-399f-4077-9a74-917a95f8ab87
+      - $p:6de581e2-9bce-47e7-8ec8-18075bae863f
+      - $p:4377455e-e1bd-4d33-a602-d0fceaea1e6a
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+  - id: pageFooter
+    name: Page Footer
+    maxComponents: 1
+    allowedComponents:
+      - footer
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+defaults:
+  type: landingPage
+  slots:
+    pageFooter:
+      - type: footer
+        _pattern: 77213da4-3e05-4540-ba7b-9f6c040c2989
+    pageHeader:
+      - type: header
+        _pattern: 540af74e-e65b-463e-a949-4e2fe22df873
+        _overridability:
+          parameters:
+            syntheticGap: 'yes'
+    pageContent:
+      - type: grid
+        slots:
+          grid-inner:
+            - type: gridItem
+              slots:
+                inner:
+                  - type: callToAction
+                    _pattern: 74b7ddb6-f6f0-4fd8-9057-cc18ab92094b
+                    _dataResources:
+                      Call to Action Content:
+                        type: contentfulCallToAction
+                        variables:
+                          locale: ''
+                          entryIds: 4ffZtYHwQooZM5QExWRfu8
+                    _overridability:
+                      variants: true
+                      parameters:
+                        title: 'yes'
+                        titleStyle: 'yes'
+                        description: 'yes'
+                        eyebrowText: 'yes'
+                        group_content: 'yes'
+                        group_primaryCta: 'yes'
+                        primaryButtonCopy: 'yes'
+                        primaryButtonLink: 'yes'
+                        group_secondaryCta: 'yes'
+                        primaryButtonStyle: 'yes'
+                        secondaryButtonCopy: 'yes'
+                        secondaryButtonLink: 'yes'
+                        secondaryButtonStyle: 'yes'
+                        primaryButtonAnimationType: 'yes'
+                        secondaryButtonAnimationType: 'yes'
+              parameters:
+                title:
+                  type: text
+                  value: Left Section
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                rowStart:
+                  type: tp-slider-parameter
+                  value: None
+                columnSpan:
+                  type: tp-slider-parameter
+                  value: '2'
+                columnStart:
+                  type: tp-slider-parameter
+                  value: none
+            - type: gridItem
+              slots:
+                inner:
+                  - type: emailSignupForm
+                    parameters:
+                      image:
+                        type: cloudinary-image
+                        value:
+                          - alt: ''
+                            url: >-
+                              https://res.cloudinary.com/uniform-demos/image/upload/v1692267231/coffee-marketing/hero-2_gjqbfo_arfttn.webp
+                            uuid: 77e9103f-4994-43b8-ab9c-8dfc3f5a8984
+                            width: '2600'
+                            format: webp
+                            height: '1300'
+                            caption: ''
+                            version: 1692267231
+                            publicId: coffee-marketing/hero-2_gjqbfo_arfttn
+                            createdAt: '2023-08-17T10:13:51Z'
+                            previewUrl: >-
+                              https://res.cloudinary.com/uniform-demos/image/upload/q_auto,f_auto,w_150/coffee-marketing/hero-2_gjqbfo_arfttn.webp
+                            resourceType: image
+                            transformation: ''
+                      title:
+                        type: ai-generated-text
+                        value: 'JavaDrip: Get Your Coffee Fix with Special Promotions!'
+                      objectFit:
+                        type: select
+                        value: cover
+                      buttonCopy:
+                        type: text
+                        value: Sign up
+                      titleStyle:
+                        type: tp-title-style-parameter
+                        value: h1
+                      buttonStyle:
+                        type: tp-button-style-parameter
+                        value: primary
+                      description:
+                        type: ai-generated-text
+                        value: >-
+                          Don't miss out! Enter your email now and get an
+                          exclusive discount coupon!
+                      overlayColor:
+                        type: tp-color-style-parameter
+                        value: base-300
+                      overlayOpacity:
+                        type: tp-slider-parameter
+                        value: 50%
+              parameters:
+                title:
+                  type: text
+                  value: Right Section
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                rowStart:
+                  type: tp-slider-parameter
+                  value: None
+                columnSpan:
+                  type: tp-slider-parameter
+                  value: '4'
+                columnStart:
+                  type: tp-slider-parameter
+                  value: none
+        parameters:
+          gapX:
+            type: tp-slider-parameter
+            value: none
+          gapY:
+            type: tp-slider-parameter
+            value: none
+          title:
+            type: text
+            value: Promotion Grid
+          columnsCount:
+            type: tp-slider-parameter
+            value: '6'
+      - type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+  _overrides:
+    d79de532-5aa9-4c3c-b141-be38ae2f7f6c:
+      parameters:
+        titleStyle:
+          type: tp-title-style-parameter
+          value: h3
+  parameters:
+    pageTitle:
+      type: text
+      value: Landing Page
+titleParameter: pageTitle
+canBeComposition: true
+created: '2023-09-28T11:38:42.543475+00:00'
+updated: '2023-09-28T11:45:42.57067+00:00'

@@ -1,0 +1,122 @@
+# yaml-language-server: $schema=<https://canary.uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://canary.uniform.app/schemas/json-schema/component-definition/v1.json
+id: emailSignupForm
+name: Email Signup Form
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: ai-generated-text
+    helpText: ''
+    typeConfig:
+      field:
+        label: ''
+        prompt: A short headline for the JavaDrip store with promotions
+        caption: ''
+      buttonText: Generate Title
+  - id: description
+    name: Description
+    type: ai-generated-text
+    helpText: ''
+    typeConfig:
+      field:
+        label: ''
+        prompt: >-
+          A short text urging the user to enter their email for a discount
+          coupon
+        caption: ''
+      buttonText: Generate Description
+  - id: titleStyle
+    name: Title Style
+    type: tp-title-style-parameter
+    helpText: ''
+    typeConfig: null
+  - id: group_imageSettings
+    name: Image Settings
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - image
+        - objectFit
+        - overlayColor
+        - overlayOpacity
+  - id: image
+    name: Image
+    type: cloudinary-image
+    helpText: ''
+    typeConfig:
+      targetFolder: ''
+  - id: objectFit
+    name: Object Fit
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Contain
+          value: contain
+        - text: Cover
+          value: cover
+        - text: Fill
+          value: fill
+        - text: None
+          value: none
+  - id: overlayColor
+    name: Overlay Color
+    type: tp-color-style-parameter
+    helpText: ''
+    typeConfig: null
+  - id: overlayOpacity
+    name: Overlay Opacity
+    type: tp-slider-parameter
+    helpText: ''
+    typeConfig:
+      step: 10
+      type: steps
+      unit: px
+      units: '%'
+      options: []
+      maxValue: 100
+      minValue: 0
+  - id: group_cta
+    name: CTA
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - buttonCopy
+        - buttonLink
+        - buttonStyle
+        - buttonAnimationType
+  - id: buttonCopy
+    name: Button Copy
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: buttonLink
+    name: Button Link
+    type: link
+    helpText: ''
+    typeConfig: null
+  - id: buttonStyle
+    name: Button Style
+    type: tp-button-style-parameter
+    helpText: ''
+    typeConfig: null
+  - id: buttonAnimationType
+    name: Button Animation Type
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Static
+          value: static
+        - text: Dynamic
+          value: dynamic
+categoryId: 04ee1e2d-be2f-412f-8ce5-d1d9dd56f27d
+useTeamPermissions: true
+slots: []
+titleParameter: buttonCopy
+canBeComposition: false
+created: '2023-09-26T08:40:21.866796+00:00'
+updated: '2023-09-26T08:40:21.866796+00:00'

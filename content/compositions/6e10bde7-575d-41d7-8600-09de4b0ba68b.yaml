@@ -1,0 +1,133 @@
+composition:
+  _name: Custom Product Details Page (old design)
+  _id: 6e10bde7-575d-41d7-8600-09de4b0ba68b
+  _slug: cervello-di-caffe-140
+  type: productDetailsPage
+  parameters:
+    pageTitle:
+      type: text
+      value: Product Details Page (old design)
+    pageSubcategories:
+      type: json
+      value: ${#jptr:/Product Content/results/0/subCategories}
+  slots:
+    pageFooter:
+      - _id: 3770ffaa-0d1f-4086-8b3e-2b14fb417eff
+        type: footer
+        _pattern: 77213da4-3e05-4540-ba7b-9f6c040c2989
+    pageHeader:
+      - _id: 06ee261e-b83b-49d0-8ef8-96c2ba17a3bd
+        type: header
+        _pattern: 540af74e-e65b-463e-a949-4e2fe22df873
+    pageContent:
+      - _id: b5c304f6-a4a6-4519-872c-426a77bcff69
+        type: hero
+        _pattern: b60d0fe0-c4cd-41f5-a2b7-e75f565095f6
+        _dataResources:
+          Hero Content:
+            type: contentfulHero
+            variables:
+              locale: ''
+              entryIds: 72al1y4juZJ1UsGcYd5ulz
+      - _id: 6c5280fe-18df-4a4f-9ab6-5c3208ee2023
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: e317940f-b20e-43de-8be2-416a89396dd4
+        type: productDetails
+        _pattern: 1f4583d7-12fa-469e-b695-7efaabd10acb
+        _dataResources:
+          Product Content:
+            type: algoliaProduct
+            variables:
+              body: >-
+                {"requests":[{"indexName":"products-ngm","objectID":"cervello-di-caffe-140"}]}
+              entryIds: cervello-di-caffe-140
+              facetValue: ''
+      - _id: e338f374-57e0-4891-8f0a-1857616e4be3
+        type: cardBlock
+        _pattern: c8b897c9-19ea-4bf8-9794-52b357b9901b
+        _dataResources:
+          Recommend Products Content:
+            type: algoliaRecommendProducts
+            variables:
+              body: >-
+                {"requests":[{"threshold":0,"maxRecommendations":5,"objectID":"black-mountain-pour-over-coffee-maker-97","model":"related-products","indexName":"products-ngm","queryParameters":{"query":"","facetFilters":[]}}]}
+              path: /*/recommendations
+              query: ''
+              objectID: black-mountain-pour-over-coffee-maker-97
+              threshold: '0'
+              facetValues: ''
+              maxRecommendations: '5'
+      - _id: 40080d1f-1f2e-430e-b08e-fe9295472475
+        type: spacer
+        parameters:
+          thickness:
+            type: tp-slider-parameter
+            value: 10px
+  _dataResources:
+    Product Content:
+      type: algoliaProduct
+      variables:
+        body: >-
+          {"requests":[{"indexName":"products-ngm","objectID":"cervello-di-caffe-140"}]}
+        entryIds: cervello-di-caffe-140
+        facetValue: ''
+  _overrides:
+    b5c304f6-a4a6-4519-872c-426a77bcff69:
+      variant: backgroundImage
+      parameters:
+        title:
+          type: text
+          value: Custom Product Detail Page
+        objectFit:
+          type: select
+          value: cover
+        textColor:
+          type: select
+          value: Light
+        paddingTop:
+          type: select
+          value: None
+        description:
+          type: text
+          value: OLD DESIGN
+        paddingBottom:
+          type: select
+          value: None
+        containerVariant:
+          type: select
+          value: fluentContent
+    e338f374-57e0-4891-8f0a-1857616e4be3:
+      parameters:
+        title:
+          type: text
+          value: Recommend Products
+    e338f374-57e0-4891-8f0a-1857616e4be3|98ef4404-7adc-4d1b-bd62-e17bc229352b:
+      parameters:
+        textColor:
+          type: select
+          value: Dark
+        buttonLink:
+          type: link
+          value:
+            path: /products/:product-slug
+            type: projectMapNode
+            nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+            dynamicInputValues:
+              product-slug: ${#jptr:/Product Content results Loop Item/slug}
+created: '2023-09-26T08:40:26.440067+00:00'
+modified: '2023-09-26T08:40:26.440067+00:00'
+pattern: false

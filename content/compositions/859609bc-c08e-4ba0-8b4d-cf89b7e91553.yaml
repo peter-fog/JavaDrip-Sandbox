@@ -1,0 +1,122 @@
+composition:
+  _name: Coffee Makers
+  _id: 859609bc-c08e-4ba0-8b4d-cf89b7e91553
+  _slug: coffee-makers
+  type: productCategoryPage
+  parameters:
+    $enr:
+      type: $enr
+      value:
+        - cat: int
+          key: c
+          str: 5
+    pageTitle:
+      type: text
+      value: Coffee Makers Page
+  slots:
+    pageFooter:
+      - _id: 73876e51-7439-417e-8790-ea395f5c9564
+        type: footer
+        _pattern: 77213da4-3e05-4540-ba7b-9f6c040c2989
+    pageHeader:
+      - _id: e8f0fb84-33c2-4de0-aa1d-a60b3c2249af
+        type: header
+        _pattern: 540af74e-e65b-463e-a949-4e2fe22df873
+    pageContent:
+      - _id: 95400c1f-a83b-436a-95d8-c9cd467c9130
+        type: hero
+        _pattern: b60d0fe0-c4cd-41f5-a2b7-e75f565095f6
+        _dataResources:
+          Hero Content:
+            type: contentfulHero
+            variables:
+              locale: ''
+              entryIds: 6i1fdFnMs0oaPnIlxNM3Qp
+      - _id: 2a22f973-7656-482e-8e10-1cf65ef964b5
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: 5ec50f5b-e8a1-4931-8039-b52a82485172
+        type: algolia-instantSearch
+        _pattern: 74d0ae67-7701-4123-9832-1844a9d26c79
+      - _id: b7615b56-8746-4fd6-bc26-45bdc137b07e
+        type: spacer
+        parameters:
+          thickness:
+            type: tp-slider-parameter
+            value: 10px
+  _overrides:
+    5ec50f5b-e8a1-4931-8039-b52a82485172:
+      parameters:
+        rootCategory:
+          type: select
+          value: Coffee Makers
+    95400c1f-a83b-436a-95d8-c9cd467c9130:
+      variant: backgroundImage
+      parameters:
+        video:
+          type: cloudinary-video
+          value:
+            - alt: ''
+              url: >-
+                https://res.cloudinary.com/uniform-demos/video/upload/v1693387616/videos/pexels-mizuno-rojas.mp4
+              uuid: 755d94c0-c0ae-4980-bea7-e4bdd8d8885a
+              width: '1920'
+              format: mp4
+              height: '1080'
+              caption: ''
+              version: 1693387616
+              publicId: videos/pexels-mizuno-rojas
+              createdAt: '2023-08-30T09:26:56Z'
+              previewUrl: >-
+                https://res.cloudinary.com/uniform-demos/video/upload/q_auto,f_auto,w_150/videos/pexels-mizuno-rojas.mp4
+              resourceType: video
+              transformation: ''
+        objectFit:
+          type: select
+          value: cover
+        textColor:
+          type: select
+          value: Light
+        paddingTop:
+          type: select
+          value: None
+        paddingBottom:
+          type: select
+          value: None
+        containerVariant:
+          type: select
+          value: fluentContent
+    5ec50f5b-e8a1-4931-8039-b52a82485172|4ec65e7d-e8be-49ee-bf3b-8c7e8f263bb2:
+      variant: ''
+      parameters:
+        textColor:
+          type: select
+          value: Dark
+        badgeStyle:
+          type: tp-badge-style-parameter
+          value: accent
+        buttonLink:
+          type: link
+          value:
+            path: /products/:product-slug
+            type: projectMapNode
+            nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+        buttonStyle:
+          type: tp-button-style-parameter
+          value: primary
+created: '2023-09-26T08:40:26.244536+00:00'
+modified: '2023-09-26T08:40:26.244536+00:00'
+pattern: false

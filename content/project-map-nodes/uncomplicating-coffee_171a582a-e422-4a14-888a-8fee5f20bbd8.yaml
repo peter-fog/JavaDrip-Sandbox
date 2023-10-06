@@ -1,0 +1,9 @@
+id: 171a582a-e422-4a14-888a-8fee5f20bbd8
+name: Contentful Custom Article Details Page
+type: composition
+data: {}
+order: 600
+path: /articles/contentful/uncomplicating-coffee
+compositionId: c20b675f-6d4b-48ae-b3c7-23d74fcdeb32
+pathSegment: uncomplicating-coffee
+projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c

@@ -1,0 +1,119 @@
+composition:
+  _name: Contentful Custom Article Details Page
+  _id: c20b675f-6d4b-48ae-b3c7-23d74fcdeb32
+  _slug: uncomplicating-coffee
+  type: articleDetailsPage
+  parameters:
+    pageTitle:
+      type: text
+      value: ${#jptr:/Article by Slug Content/items/0/fields/title} Details Page
+  slots:
+    pageFooter:
+      - _id: a54bed01-8b0b-411d-9552-91fcfb9254d7
+        type: footer
+        _pattern: 77213da4-3e05-4540-ba7b-9f6c040c2989
+    pageHeader:
+      - _id: c4ae49a0-863c-4c63-ae9d-30ef61d801d2
+        type: header
+        _pattern: 540af74e-e65b-463e-a949-4e2fe22df873
+    pageContent:
+      - _id: 20ecad6e-21fb-42f8-82af-29769bab3ebc
+        type: hero
+        _pattern: b60d0fe0-c4cd-41f5-a2b7-e75f565095f6
+        _dataResources:
+          Hero Content:
+            type: contentfulHero
+            variables:
+              locale: ''
+              entryIds: fb3Mzu5lE1DejGu0FuCMr
+      - _id: 8afa2233-8cfa-4cdc-8a99-be9093292d3c
+        type: breadcrumbs
+        parameters:
+          title:
+            type: text
+            value: Article Details Page
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: e53d30c7-31a8-4be1-a6ba-a4b07438d1e9
+        type: video
+        parameters:
+          url:
+            type: link
+            value:
+              path: https://www.youtube.com/watch?v=ZuQu12vMQZM
+              type: url
+          lazyLoad:
+            type: checkbox
+            value: true
+          placeholderImage:
+            type: image
+            value: >-
+              https://res.cloudinary.com/uniformdev/image/upload/v1685571018/JavaDrip/photo-1618832127223-a72a454a66c7_uruyjo.jpg
+      - _id: 445f836e-be48-4bb4-a0aa-69ad0f58b91e
+        type: content
+        _pattern: 715b544e-11ac-4418-9b8e-c6a294db5169
+        _dataResources:
+          Article by Slug Content:
+            type: contentfulArticleBySlug
+            variables:
+              slug: uncomplicating-coffee
+              locale: ''
+              slugField: fields.slug[in]
+              contentType: article
+  _dataResources:
+    Article by Slug Content:
+      type: contentfulArticleBySlug
+      variables:
+        slug: uncomplicating-coffee
+        locale: ''
+        slugField: fields.slug[in]
+        contentType: article
+  _overrides:
+    20ecad6e-21fb-42f8-82af-29769bab3ebc:
+      variant: backgroundImage
+      parameters:
+        image:
+          type: image
+          value: >-
+            ${#jptr:/Article by Slug
+            Content/items/0/fields/thumbnail/fields/file/url}
+        title:
+          type: text
+          value: ${#jptr:/Article by Slug Content/items/0/fields/title}
+        objectFit:
+          type: select
+          value: cover
+        textColor:
+          type: select
+          value: Light
+        paddingTop:
+          type: select
+          value: None
+        description:
+          type: text
+          value: This is a custom article page
+        overlayColor:
+          type: tp-color-style-parameter
+          value: base-300
+        paddingBottom:
+          type: select
+          value: None
+        overlayOpacity:
+          type: tp-slider-parameter
+          value: 50%
+        containerVariant:
+          type: select
+          value: fluentContent
+created: '2023-09-26T08:40:27.117491+00:00'
+modified: '2023-09-26T08:40:27.117491+00:00'
+pattern: false

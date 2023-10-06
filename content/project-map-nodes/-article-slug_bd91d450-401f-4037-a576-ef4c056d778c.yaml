@@ -1,0 +1,9 @@
+id: bd91d450-401f-4037-a576-ef4c056d778c
+name: Contentful Article Details Page
+type: composition
+data: {}
+order: 500
+path: /articles/contentful/:article-slug
+compositionId: b50575eb-f0a9-4e42-bcfc-cece402ba4f4
+pathSegment: ':article-slug'
+projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c

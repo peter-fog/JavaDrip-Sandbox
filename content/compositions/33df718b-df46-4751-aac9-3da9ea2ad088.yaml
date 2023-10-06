@@ -1,0 +1,319 @@
+composition:
+  _name: JavaDrip Specialty
+  _id: 33df718b-df46-4751-aac9-3da9ea2ad088
+  _slug: javadrip-specialty-coffee-maker
+  type: productDetailsPage
+  parameters:
+    pageTitle:
+      type: text
+      value: Product Details Page
+  slots:
+    pageFooter:
+      - _id: 900d8580-5ce4-41ac-96bb-6d4c62cf7842
+        type: footer
+        _pattern: 77213da4-3e05-4540-ba7b-9f6c040c2989
+    pageHeader:
+      - _id: 1b41ec3b-7586-4fe9-abb2-d2b042c82b66
+        type: header
+        _pattern: 540af74e-e65b-463e-a949-4e2fe22df873
+    pageContent:
+      - _id: 892b02f9-84d5-40e3-ad1a-35c1216e4029
+        type: hero
+        _pattern: b60d0fe0-c4cd-41f5-a2b7-e75f565095f6
+        _dataResources:
+          Hero Content:
+            type: contentfulHero
+            variables:
+              locale: ''
+              entryIds: 4gkNfuxIX9e2ayKhZmcBgM
+      - _id: fa69a44a-a3b4-48f0-9f98-53b4a3215c75
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: 0396322e-ec03-4874-876e-5ed14ed1b2e2
+        type: productInfo
+        _pattern: 74cc4c81-50de-4bcc-a05a-00ad738a3f45
+        _dataResources:
+          Product Content:
+            type: algoliaProduct
+            variables:
+              body: >-
+                {"requests":[{"indexName":"products-ngm","objectID":"javadrip-specialty-coffee-maker"}]}
+              entryIds: javadrip-specialty-coffee-maker
+              facetValue: ''
+      - _id: b2b53762-1ede-4733-9118-6498bf25f0c6
+        type: spacer
+        parameters:
+          thickness:
+            type: tp-slider-parameter
+            value: 10px
+      - _id: 25168a4f-d0cf-483e-ae21-263809cf1628
+        type: grid
+        _pattern: 6de581e2-9bce-47e7-8ec8-18075bae863f
+        _dataResources:
+          Features Content:
+            type: contentfulFeatures
+            variables:
+              locale: ''
+              entryIds: >-
+                73xRkM4Gfmj97bxmqa9l5y,CGRhkvMr5xEmvx6pKPh0Y,18dOBcbDTMsYquEZWfQqRJ
+      - _id: b9d40e7f-0af0-4d97-9e2b-441a02c828c5
+        type: spacer
+        parameters:
+          thickness:
+            type: tp-slider-parameter
+            value: 10px
+      - _id: 9f4a18c0-4c43-4909-a316-f087ea3e4cfe
+        type: container
+        slots:
+          container-inner:
+            - _id: 281d6021-125e-4d25-b566-98b1480869c2
+              type: hero
+              _pattern: 39466862-6b5f-416c-b01a-4c834aa76c2c
+              _dataResources:
+                Reviews Content:
+                  type: contentfulReviews
+                  variables:
+                    locale: ''
+                    entryIds: 52fNhH0GdTlkv8VHr9IIzw
+        parameters:
+          marginTop:
+            type: select
+            value: None
+          paddingTop:
+            type: select
+            value: None
+          marginBottom:
+            type: select
+            value: None
+          paddingBottom:
+            type: select
+            value: None
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+      - _id: aff46f7a-9cac-4b73-8e2b-361853fc3ef0
+        type: productGallery
+        _pattern: 2bd73ccd-3021-45ed-8cd0-fd66f0ffcd11
+        _dataResources:
+          Product Content:
+            type: algoliaProduct
+            variables:
+              body: >-
+                {"requests":[{"indexName":"products-ngm","objectID":"javadrip-specialty-coffee-maker"}]}
+              entryIds: javadrip-specialty-coffee-maker
+              facetValue: ''
+      - _id: 84ac49bb-3866-4f43-ab64-cfe6591c4a46
+        type: container
+        slots:
+          container-inner:
+            - _id: 0566294a-240a-4bf6-9519-26bb2f598182
+              type: grid
+              _pattern: 4377455e-e1bd-4d33-a602-d0fceaea1e6a
+              _dataResources:
+                Reviews Content:
+                  type: contentfulReviews
+                  variables:
+                    locale: ''
+                    entryIds: >-
+                      52fNhH0GdTlkv8VHr9IIzw,4l2PidLD1etg20cO0CExLn,2tqL3PvUHnO55QXZ0ZivC5,7DDqLGKrydUFYdNDuC60ZD
+        parameters:
+          paddingTop:
+            type: select
+            value: Small
+          paddingBottom:
+            type: select
+            value: None
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+      - _id: d6317a32-667e-4e74-a801-53c6581c209a
+        type: cardBlock
+        slots:
+          cardBlockInner:
+            - _id: b2ea2181-6df2-4e36-90ed-eb29abfa804e
+              type: $loop
+              slots:
+                body:
+                  - _id: 76a5d1d3-0ef4-4fb1-8465-1576fc9d6351
+                    type: card
+                    variant: featured
+                    parameters:
+                      badge:
+                        type: text
+                        value: Accessory
+                      image:
+                        type: image
+                        value: >-
+                          ${#jptr:/Features Content items Loop
+                          Item/fields/image}
+                      title:
+                        type: text
+                        value: >-
+                          ${#jptr:/Features Content items Loop
+                          Item/fields/title}
+                      badgeSize:
+                        type: select
+                        value: sm
+                      objectFit:
+                        type: select
+                        value: cover
+                      textColor:
+                        type: select
+                        value: Dark
+                      badgeStyle:
+                        type: tp-badge-style-parameter
+                        value: accent
+                      description:
+                        type: text
+                        value: >-
+                          ${#jptr:/Features Content items Loop
+                          Item/fields/description}
+                      lineCountRestriction:
+                        type: tp-slider-parameter
+                        value: none
+              _dataResources:
+                Features Content items Loop Item:
+                  type: sys-reserved-loop
+                  variables:
+                    connectedData: /Features Content/items
+        variant: carousel
+        parameters:
+          title:
+            type: text
+            value: Recommended Accessories
+          textColor:
+            type: select
+            value: Dark
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h3
+          description:
+            type: text
+            value: Parts and Accessories for the JavaDrip Specialty
+      - _id: 5a4f8f14-c43a-4e9c-9e25-4fe450626291
+        type: hero
+        variant: backgroundImage
+        parameters:
+          video:
+            type: cloudinary-video
+            value:
+              - alt: ''
+                url: >-
+                  https://res.cloudinary.com/uniform-demos/video/upload/v1693484203/coffee-marketing/Meet_the_Specialty_nhdmh7.mp4
+                uuid: 32a118b0-3c49-4c30-a203-48bb8b8cad08
+                width: '1920'
+                format: mp4
+                height: '1080'
+                caption: ''
+                version: 1693484203
+                publicId: coffee-marketing/Meet_the_Specialty_nhdmh7
+                createdAt: '2023-08-31T12:16:43Z'
+                previewUrl: >-
+                  https://res.cloudinary.com/uniform-demos/video/upload/q_auto,f_auto/coffee-marketing/Meet_the_Specialty_nhdmh7.mp4
+                resourceType: video
+                transformation: ''
+          objectFit:
+            type: select
+            value: fill
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+  _dataResources:
+    Features Content:
+      type: contentfulFeatures
+      variables:
+        locale: ''
+        entryIds: >-
+          3pShHM1eiqGCCCrNxOaYiA,178rQlAAsf5l4lBXUvD0Wy,1e7LWh6CnRh3DRxrk016LA,63oHRSoOtknOP6Em5RDHpZ,1AcJkC8r6EH4wj7Bz43F9A
+  _overrides:
+    1b41ec3b-7586-4fe9-abb2-d2b042c82b66:
+      parameters:
+        syntheticGap:
+          type: tp-slider-parameter
+          value: None
+    25168a4f-d0cf-483e-ae21-263809cf1628:
+      parameters:
+        columnsCount:
+          type: tp-slider-parameter
+          value: '3'
+    281d6021-125e-4d25-b566-98b1480869c2:
+      parameters:
+        marginTop:
+          type: select
+          value: None
+        textColor:
+          type: select
+          value: Light
+        fullHeight:
+          type: checkbox
+          value: null
+        paddingTop:
+          type: select
+          value: Small
+        marginBottom:
+          type: select
+          value: None
+        paddingBottom:
+          type: select
+          value: None
+        containerVariant:
+          type: select
+          value: null
+    892b02f9-84d5-40e3-ad1a-35c1216e4029:
+      parameters:
+        video:
+          type: cloudinary-video
+          value:
+            - alt: ''
+              url: >-
+                https://res.cloudinary.com/uniform-demos/video/upload/v1694213844/coffee-marketing/Specialty_Animation_co3vth.mp4
+              uuid: 0866bd2a-bfec-4119-9caf-0476e307889a
+              width: '1920'
+              format: mp4
+              height: '1080'
+              caption: ''
+              version: 1694213844
+              publicId: coffee-marketing/Specialty_Animation_co3vth
+              createdAt: '2023-09-08T22:57:24Z'
+              previewUrl: >-
+                https://res.cloudinary.com/uniform-demos/video/upload/q_auto,f_auto/coffee-marketing/Specialty_Animation_co3vth.mp4
+              resourceType: video
+              transformation: ''
+        eyebrowText:
+          type: text
+          value: New Product
+    aff46f7a-9cac-4b73-8e2b-361853fc3ef0:
+      parameters:
+        paddingTop:
+          type: select
+          value: None
+        paddingBottom:
+          type: select
+          value: None
+    0566294a-240a-4bf6-9519-26bb2f598182|4aeee2e3-e311-4d19-a047-1c3a7e68d443:
+      variant: ''
+      parameters:
+        showReviewLabel:
+          type: checkbox
+          value: null
+    25168a4f-d0cf-483e-ae21-263809cf1628|8b05735f-2206-4fdb-8836-73a6a560a01c:
+      variant: ''
+      parameters:
+        lineCountRestriction:
+          type: tp-slider-parameter
+          value: none
+created: '2023-09-27T15:51:43.947925+00:00'
+modified: '2023-09-27T19:38:40.00058+00:00'
+pattern: false

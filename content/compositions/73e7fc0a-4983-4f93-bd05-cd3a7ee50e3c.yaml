@@ -1,0 +1,266 @@
+composition:
+  _name: JavaDrip Specialty Launch
+  _id: 73e7fc0a-4983-4f93-bd05-cd3a7ee50e3c
+  _slug: JavaDrip-Specialty-Launch
+  type: landingPage
+  parameters:
+    pageTitle:
+      type: text
+      value: Landing  Page
+  slots:
+    pageFooter:
+      - _id: 4763af16-95d1-454c-a225-94ba792861d4
+        type: footer
+        _pattern: 77213da4-3e05-4540-ba7b-9f6c040c2989
+    pageHeader:
+      - _id: 9b2a9494-26de-4e4b-a6c1-d10a14d495a5
+        type: header
+        _pattern: 540af74e-e65b-463e-a949-4e2fe22df873
+    pageContent:
+      - _id: 2cae7ea2-5e0c-43cb-a18f-0ce37d7cf013
+        type: hero
+        _pattern: b60d0fe0-c4cd-41f5-a2b7-e75f565095f6
+        _dataResources:
+          Hero Content:
+            type: contentfulHero
+            variables:
+              locale: ''
+              entryIds: 4gkNfuxIX9e2ayKhZmcBgM
+      - _id: ea9c88ce-a4a2-4377-966b-3f6fa52d3221
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: base-300
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: e71f6ce9-cbc6-48a3-a9c8-41831b1fca16
+        type: hero
+        _pattern: b60d0fe0-c4cd-41f5-a2b7-e75f565095f6
+        _dataResources:
+          Hero Content:
+            type: contentfulHero
+            variables:
+              locale: ''
+              entryIds: 2Q6oSkhdn190hsDCT5qdcr
+      - _id: 42156e8e-04a1-497e-80a3-253d0793c7eb
+        type: grid
+        _pattern: 4377455e-e1bd-4d33-a602-d0fceaea1e6a
+        _dataResources:
+          Reviews Content:
+            type: contentfulReviews
+            variables:
+              locale: ''
+              entryIds: 7DDqLGKrydUFYdNDuC60ZD,4l2PidLD1etg20cO0CExLn
+      - _id: bf46f518-66af-4495-bf9b-38958ec7b8a9
+        type: $personalization
+        slots:
+          pz:
+            - _id: fd66be23-a073-4acd-8cb7-4d847711d742
+              type: couponHero
+              _pattern: 9582f2a8-399f-4077-9a74-917a95f8ab87
+              _dataResources:
+                Call to Action Content:
+                  type: contentfulCallToAction
+                  variables:
+                    locale: ''
+                    entryIds: 7hSYWbTDzwimMAOlWwy6an
+            - _id: 51699645-6012-4ec3-8138-74168e60b556
+              type: grid
+              slots:
+                grid-inner:
+                  - _id: 6c18d4cd-162b-4f96-9a05-abfb71810848
+                    type: gridItem
+                    slots:
+                      inner:
+                        - _id: e45514d5-1822-47f3-b33a-7945fb163745
+                          type: callToAction
+                          _pattern: 74b7ddb6-f6f0-4fd8-9057-cc18ab92094b
+                          _dataResources:
+                            Call to Action Content:
+                              type: contentfulCallToAction
+                              variables:
+                                locale: ''
+                                entryIds: 7hSYWbTDzwimMAOlWwy6an
+                    parameters:
+                      title:
+                        type: text
+                        value: Left Section
+                      rowSpan:
+                        type: tp-slider-parameter
+                        value: '1'
+                      rowStart:
+                        type: tp-slider-parameter
+                        value: None
+                      columnSpan:
+                        type: tp-slider-parameter
+                        value: '2'
+                      columnStart:
+                        type: tp-slider-parameter
+                        value: none
+                  - _id: 912e8c5e-4011-4f8f-b1f9-e83b991b062f
+                    type: gridItem
+                    slots:
+                      inner:
+                        - _id: dae2d4ec-ac0b-4ec7-ad45-0a3b30a01fa5
+                          type: emailSignupForm
+                          parameters:
+                            image:
+                              type: cloudinary-image
+                              value:
+                                - alt: ''
+                                  url: >-
+                                    https://res.cloudinary.com/uniform-demos/image/upload/v1692267231/coffee-marketing/hero-2_gjqbfo_arfttn.webp
+                                  uuid: 77e9103f-4994-43b8-ab9c-8dfc3f5a8984
+                                  width: '2600'
+                                  format: webp
+                                  height: '1300'
+                                  caption: ''
+                                  version: 1692267231
+                                  publicId: coffee-marketing/hero-2_gjqbfo_arfttn
+                                  createdAt: '2023-08-17T10:13:51Z'
+                                  previewUrl: >-
+                                    https://res.cloudinary.com/uniform-demos/image/upload/q_auto,f_auto,w_150/coffee-marketing/hero-2_gjqbfo_arfttn.webp
+                                  resourceType: image
+                                  transformation: ''
+                            title:
+                              type: ai-generated-text
+                              value: >-
+                                JavaDrip: Get Your Coffee Fix with Special
+                                Promotions!
+                            objectFit:
+                              type: select
+                              value: cover
+                            buttonCopy:
+                              type: text
+                              value: Sign up
+                            titleStyle:
+                              type: tp-title-style-parameter
+                              value: h1
+                            buttonStyle:
+                              type: tp-button-style-parameter
+                              value: primary
+                            description:
+                              type: ai-generated-text
+                              value: >-
+                                Don't miss out! Enter your email now and get an
+                                exclusive discount coupon!
+                            overlayColor:
+                              type: tp-color-style-parameter
+                              value: base-300
+                            overlayOpacity:
+                              type: tp-slider-parameter
+                              value: 50%
+                    parameters:
+                      title:
+                        type: text
+                        value: Right Section
+                      rowSpan:
+                        type: tp-slider-parameter
+                        value: '1'
+                      rowStart:
+                        type: tp-slider-parameter
+                        value: None
+                      columnSpan:
+                        type: tp-slider-parameter
+                        value: '4'
+                      columnStart:
+                        type: tp-slider-parameter
+                        value: none
+              parameters:
+                gapX:
+                  type: tp-slider-parameter
+                  value: none
+                gapY:
+                  type: tp-slider-parameter
+                  value: none
+                title:
+                  type: text
+                  value: Promotion Grid
+                columnsCount:
+                  type: tp-slider-parameter
+                  value: '6'
+        parameters:
+          trackingEventName:
+            type: text
+            value: 'Coupon '
+  _overrides:
+    2cae7ea2-5e0c-43cb-a18f-0ce37d7cf013:
+      variant: backgroundImage
+      parameters:
+        video:
+          type: cloudinary-video
+          value:
+            - alt: ''
+              url: >-
+                https://res.cloudinary.com/uniform-demos/video/upload/v1694213844/coffee-marketing/Specialty_Animation_co3vth.mp4
+              uuid: 15656980-3d34-413a-9f40-ed07db12610e
+              width: '1920'
+              format: mp4
+              height: '1080'
+              caption: ''
+              version: 1694213844
+              publicId: coffee-marketing/Specialty_Animation_co3vth
+              createdAt: '2023-09-08T22:57:24Z'
+              previewUrl: >-
+                https://res.cloudinary.com/uniform-demos/video/upload/q_auto,f_auto/coffee-marketing/Specialty_Animation_co3vth.mp4
+              resourceType: video
+              transformation: ''
+        objectFit:
+          type: select
+          value: cover
+        paddingTop:
+          type: select
+          value: None
+        animationType:
+          type: select
+          value: dynamic
+        paddingBottom:
+          type: select
+          value: None
+        backgroundType:
+          type: tp-background-type-parameter
+          value: Dark
+        containerVariant:
+          type: select
+          value: fluentContent
+    9b2a9494-26de-4e4b-a6c1-d10a14d495a5:
+      parameters:
+        syntheticGap:
+          type: tp-slider-parameter
+          value: None
+    e71f6ce9-cbc6-48a3-a9c8-41831b1fca16:
+      variant: imageLeft
+      parameters:
+        marginTop:
+          type: select
+          value: None
+        marginBottom:
+          type: select
+          value: None
+    fd66be23-a073-4acd-8cb7-4d847711d742:
+      parameters:
+        $pzCrit:
+          type: $pzCrit
+          value:
+            crit:
+              - l: registeredForNewsletter
+                r: 0
+                op: '>'
+            name: 'Hero - Coupon: ${#jptr:/Call to Action Content/fields/title}'
+    42156e8e-04a1-497e-80a3-253d0793c7eb|4aeee2e3-e311-4d19-a047-1c3a7e68d443:
+      variant: multiColumn
+      parameters:
+        title:
+          type: text
+          value: ${#jptr:/Reviews Content items Loop Item/fields/title}
+created: '2023-09-27T15:08:41.981011+00:00'
+modified: '2023-09-27T17:43:14.758886+00:00'
+pattern: false
