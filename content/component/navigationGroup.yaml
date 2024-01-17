@@ -1,5 +1,5 @@
-# yaml-language-server: $schema=<https://canary.uniform.app/schemas/json-schema/component-definition/v1.json>
-$schema: https://canary.uniform.app/schemas/json-schema/component-definition/v1.json
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: navigationGroup
 name: Navigation Group
 icon: >-
@@ -25,10 +25,11 @@ slots:
     name: Sub Nav Items
     allowedComponents:
       - navigationLink
+      - navigationOneColumnMenuLink
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 titleParameter: title
 canBeComposition: false
-created: '2023-11-22T09:43:33.451412+00:00'
-updated: '2023-11-22T10:04:52.121541+00:00'
+created: '2024-01-17T18:37:54.824392+00:00'
+updated: '2024-01-17T19:05:33.045862+00:00'

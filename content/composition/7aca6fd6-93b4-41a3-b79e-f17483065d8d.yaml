@@ -1,0 +1,89 @@
+composition:
+  _name: blog-post
+  _id: 7aca6fd6-93b4-41a3-b79e-f17483065d8d
+  _slug: ':blog-post'
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: ${#jptr:/JavaDrip Post Content/title}
+  slots:
+    pageFooter:
+      - _id: 7ba839e5-66a3-4c87-bad0-18748ef79808
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 910f7976-bf57-4af6-90be-674746e2601a
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: 6d19a6a6-4fc7-4871-b5b4-2b7221cfdfb1
+        type: hero
+        variant: backgroundImage
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 4070e72d-2cc9-41cd-880a-cad4f0bfd474
+                type: image
+                fields:
+                  url:
+                    type: text
+                    value: ${#jptr:/JavaDrip Post Content/featured_image}
+                _source: custom-url
+          title:
+            type: text
+            value: ${#jptr:/JavaDrip Post Content/title}
+          objectFit:
+            type: select
+            value: cover
+          paddingTop:
+            type: select
+            value: None
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h3
+          eyebrowText:
+            type: text
+            value: JavaDrip Blog
+          paddingBottom:
+            type: select
+            value: None
+          containerVariant:
+            type: select
+            value: fluidContent
+          textColorVariant:
+            type: select
+            value: Light
+      - _id: 6fd7299a-3305-4063-9c13-ee1a7c5cc6da
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: f39a50e1-4024-402f-a5df-eaa91ceea76a
+        type: content
+        parameters:
+          content:
+            type: json
+            value: ${#jptr:/JavaDrip Post Content/content}
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+  _dataResources:
+    JavaDrip Post Content:
+      type: javadripPostBySlug
+      variables:
+        slug: ${blog-post}
+created: '2024-01-17T19:01:39.143324+00:00'
+modified: '2024-01-17T19:03:47.503247+00:00'
+pattern: false

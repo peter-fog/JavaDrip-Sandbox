@@ -1,0 +1,400 @@
+composition:
+  _name: Grid Layout
+  _id: 078864b6-9b0d-4dcb-8a91-bad29a5ec540
+  _slug: grid-layout
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Grid
+  slots:
+    pageFooter:
+      - _id: 4cc52005-411e-4254-bc76-eb4bd65847b9
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 9065ae62-5b1f-48da-a287-8cb9fd43ff9d
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: d0bf914d-15fd-4322-a88b-68057eda4697
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: 1e2d08a6-06a2-4332-a9d3-029915a4a002
+        type: grid
+        slots:
+          grid-inner:
+            - _id: 81089402-459d-4e89-bee6-031655f32fd1
+              type: gridItem
+              slots:
+                inner:
+                  - _id: c0e08d03-9451-4d79-af5e-775c9c33e1fe
+                    type: card
+                    variant: backgroundImage
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: e9f13e6d-992c-42f2-97c8-8c0e434e5fde
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: f46648cc-31ec-40b2-90ee-c7843a29e046
+                              url:
+                                value: >-
+                                  https://img.uniform.global/p/LqA0iHFlRliN0n88d9R44Q/RJxWOQ_VTfWkR_KqEN56Fw-espressoGPT_hero_3.jpg
+                                type: text
+                              file:
+                                type: file
+                                value: 499a210c-3052-424c-9cac-3e20abe648ad
+                              size:
+                                value: 6168022
+                                type: number
+                              title:
+                                type: text
+                                value: espressoGPT_hero_3.jpg
+                              width:
+                                value: 2731
+                                type: number
+                              height:
+                                value: 4096
+                                type: number
+                              mediaType:
+                                value: image/jpeg
+                                type: text
+                            _source: uniform-assets
+                      title:
+                        type: text
+                        value: Column 1 of Grid
+              parameters:
+                title:
+                  type: text
+                  value: Left Column
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                rowStart:
+                  type: tp-slider-parameter
+                  value: None
+                columnSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                columnStart:
+                  type: tp-slider-parameter
+                  value: '2'
+            - _id: 8d58394b-493c-41ea-9f37-93f5fc6f7af3
+              type: gridItem
+              slots:
+                inner:
+                  - _id: 64dd381f-c5a5-41bf-b711-e98b7aa5fe69
+                    type: hero
+                    variant: backgroundImage
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: 9f609292-e902-4338-81e2-be843e169c62
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: f6526b0d-5c64-4d58-bf35-c3df3aeb5c53
+                              url:
+                                value: >-
+                                  https://img.uniform.global/p/LqA0iHFlRliN0n88d9R44Q/Eo16v8nfRG6Hx-COICgLpw-rectangle.png
+                                type: text
+                              file:
+                                type: file
+                                value: e3ce761b-5a74-43dc-b2bd-60a14fef3f29
+                              size:
+                                value: 1995981
+                                type: number
+                              title:
+                                type: text
+                                value: rectangle.png
+                              width:
+                                value: 1600
+                                type: number
+                              height:
+                                value: 689
+                                type: number
+                              mediaType:
+                                value: image/png
+                                type: text
+                            _source: uniform-assets
+                      title:
+                        type: text
+                        value: Beans
+                      titleStyle:
+                        type: tp-title-style-parameter
+                        value: h1
+                      description:
+                        type: text
+                        value: ROW 2 COLUMN 2-3
+                      eyebrowText:
+                        type: text
+                        value: 2 COLUMN SPAN
+              parameters:
+                title:
+                  type: text
+                  value: Right Column
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                rowStart:
+                  type: tp-slider-parameter
+                  value: None
+                columnSpan:
+                  type: tp-slider-parameter
+                  value: '2'
+                columnStart:
+                  type: tp-slider-parameter
+                  value: none
+            - _id: d3bf24b0-8799-401e-bf9c-23531b8a335e
+              type: gridItem
+              slots:
+                inner:
+                  - _id: 1ecd29f2-9385-4283-9d01-954419b94967
+                    type: hero
+                    variant: backgroundImage
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: 9f609292-e902-4338-81e2-be843e169c62
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: f6526b0d-5c64-4d58-bf35-c3df3aeb5c53
+                              url:
+                                value: >-
+                                  https://img.uniform.global/p/LqA0iHFlRliN0n88d9R44Q/Eo16v8nfRG6Hx-COICgLpw-rectangle.png
+                                type: text
+                              file:
+                                type: file
+                                value: e3ce761b-5a74-43dc-b2bd-60a14fef3f29
+                              size:
+                                value: 1995981
+                                type: number
+                              title:
+                                type: text
+                                value: rectangle.png
+                              width:
+                                value: 1600
+                                type: number
+                              height:
+                                value: 689
+                                type: number
+                              mediaType:
+                                value: image/png
+                                type: text
+                            _source: uniform-assets
+                      title:
+                        type: text
+                        value: Beans
+                      titleStyle:
+                        type: tp-title-style-parameter
+                        value: h3
+                      description:
+                        type: text
+                        value: ROW 2 COLUMN 1
+                      eyebrowText:
+                        type: text
+                        value: 1 COLUMN SPAN
+              parameters:
+                title:
+                  type: text
+                  value: Left column
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                rowStart:
+                  type: tp-slider-parameter
+                  value: None
+                columnSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                columnStart:
+                  type: tp-slider-parameter
+                  value: '2'
+            - _id: 99a9c857-d670-424d-9453-68787dd997ed
+              type: gridItem
+              slots:
+                inner:
+                  - _id: 43348052-d98f-45f4-9fa7-4d95261a9310
+                    type: hero
+                    variant: backgroundImage
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: 9f609292-e902-4338-81e2-be843e169c62
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: f6526b0d-5c64-4d58-bf35-c3df3aeb5c53
+                              url:
+                                value: >-
+                                  https://img.uniform.global/p/LqA0iHFlRliN0n88d9R44Q/Eo16v8nfRG6Hx-COICgLpw-rectangle.png
+                                type: text
+                              file:
+                                type: file
+                                value: e3ce761b-5a74-43dc-b2bd-60a14fef3f29
+                              size:
+                                value: 1995981
+                                type: number
+                              title:
+                                type: text
+                                value: rectangle.png
+                              width:
+                                value: 1600
+                                type: number
+                              height:
+                                value: 689
+                                type: number
+                              mediaType:
+                                value: image/png
+                                type: text
+                            _source: uniform-assets
+                      title:
+                        type: text
+                        value: Beans
+                      titleStyle:
+                        type: tp-title-style-parameter
+                        value: h3
+                      description:
+                        type: text
+                        value: ROW 2 COLUMN 2
+                      eyebrowText:
+                        type: text
+                        value: 1 COLUMN SPAN
+              parameters:
+                title:
+                  type: text
+                  value: Middle column
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                rowStart:
+                  type: tp-slider-parameter
+                  value: None
+                columnSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                columnStart:
+                  type: tp-slider-parameter
+                  value: none
+            - _id: 48d21d12-d81c-4d26-95ac-89fa20404535
+              type: gridItem
+              slots:
+                inner:
+                  - _id: 6713a784-26eb-4a1a-9a5e-d4123bf9df2d
+                    type: hero
+                    variant: backgroundImage
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: 9f609292-e902-4338-81e2-be843e169c62
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: f6526b0d-5c64-4d58-bf35-c3df3aeb5c53
+                              url:
+                                value: >-
+                                  https://img.uniform.global/p/LqA0iHFlRliN0n88d9R44Q/Eo16v8nfRG6Hx-COICgLpw-rectangle.png
+                                type: text
+                              file:
+                                type: file
+                                value: e3ce761b-5a74-43dc-b2bd-60a14fef3f29
+                              size:
+                                value: 1995981
+                                type: number
+                              title:
+                                type: text
+                                value: rectangle.png
+                              width:
+                                value: 1600
+                                type: number
+                              height:
+                                value: 689
+                                type: number
+                              mediaType:
+                                value: image/png
+                                type: text
+                            _source: uniform-assets
+                      title:
+                        type: text
+                        value: Beans
+                      titleStyle:
+                        type: tp-title-style-parameter
+                        value: h3
+                      description:
+                        type: text
+                        value: ROW 2 COLUMN 3
+                      eyebrowText:
+                        type: text
+                        value: 1 COLUMN SPAN
+              parameters:
+                title:
+                  type: text
+                  value: Right column
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                rowStart:
+                  type: tp-slider-parameter
+                  value: None
+                columnSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                columnStart:
+                  type: tp-slider-parameter
+                  value: none
+        parameters:
+          gapX:
+            type: tp-slider-parameter
+            value: small
+          gapY:
+            type: tp-slider-parameter
+            value: none
+          marginTop:
+            type: select
+            value: None
+          paddingTop:
+            type: select
+            value: Small
+          columnsCount:
+            type: tp-slider-parameter
+            value: '5'
+          marginBottom:
+            type: select
+            value: None
+          paddingBottom:
+            type: select
+            value: Small
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+          containerVariant:
+            type: select
+            value: fluidContent
+created: '2024-01-17T19:26:29.05083+00:00'
+modified: '2024-01-17T19:31:02.141083+00:00'
+pattern: false

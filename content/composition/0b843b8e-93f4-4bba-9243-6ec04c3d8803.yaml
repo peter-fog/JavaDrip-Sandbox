@@ -1,0 +1,187 @@
+composition:
+  _name: Tab Layout
+  _id: 0b843b8e-93f4-4bba-9243-6ec04c3d8803
+  _slug: tab-layout
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Tab Layouts
+  slots:
+    pageFooter:
+      - _id: 9f452d5b-50e0-4362-8cd5-54dd695fc943
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 91c665fe-12b6-4bf6-99c5-63e4e108286a
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: c5eeda9d-885f-483c-8d3f-167ebc773093
+        type: spacer
+        parameters:
+          thickness:
+            type: tp-slider-parameter
+            value: 20px
+      - _id: 1a788e8a-4be0-4cb3-97b1-874a52a16970
+        type: tabs
+        slots:
+          tabs:
+            - _id: b490fd1b-2d45-4a9c-a309-2e5ce514bc6d
+              type: tab
+              slots:
+                content:
+                  - _id: 22da344d-18f4-4545-a7c5-b7d1c9c48db5
+                    type: hero
+                    variant: backgroundImage
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: 21641c7e-39fe-4d03-a6f8-c9c19289f75a
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: ed9c932b-2054-482b-a668-89769460cc8a
+                              url:
+                                value: >-
+                                  https://img.uniform.global/p/LqA0iHFlRliN0n88d9R44Q/Vry8PkNRRNCxP8w2FYL9UA-Coffee-Shop.png
+                                type: text
+                              file:
+                                type: file
+                                value: 9d154103-bc6e-4b22-b9bc-c0561ac153a1
+                              size:
+                                value: 858091
+                                type: number
+                              title:
+                                type: text
+                                value: Coffee-Shop.png
+                              width:
+                                value: 1024
+                                type: number
+                              height:
+                                value: 1024
+                                type: number
+                              mediaType:
+                                value: image/png
+                                type: text
+                            _source: uniform-assets
+                      title:
+                        type: text
+                        value: Exterior of Coffee Shop
+                      objectFit:
+                        type: select
+                        value: cover
+                      paddingTop:
+                        type: select
+                        value: None
+                      titleStyle:
+                        type: tp-title-style-parameter
+                        value: h1
+                      paddingBottom:
+                        type: select
+                        value: None
+                      containerVariant:
+                        type: select
+                        value: fluidContent
+                      textColorVariant:
+                        type: select
+                        value: Light
+              parameters:
+                title:
+                  type: text
+                  value: Exterior
+                isActive:
+                  type: checkbox
+                  value: true
+            - _id: c73c76e5-47e8-4a84-86ac-112a07295c77
+              type: tab
+              slots:
+                content:
+                  - _id: 4e80a6f8-f4f0-420e-b11b-7de3d35f42f5
+                    type: hero
+                    variant: backgroundImage
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: e6a49ad7-2989-422f-9f7e-b81f44d33280
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: 0d44154f-d229-4144-98b5-09c4e1c5c87b
+                              url:
+                                value: >-
+                                  https://img.uniform.global/p/LqA0iHFlRliN0n88d9R44Q/-pw4BSXjQ2a43V7sOVQDbw-Coffee-Shop-Interior.png
+                                type: text
+                              file:
+                                type: file
+                                value: 844baebb-fce3-4fd6-8233-ea64fff78776
+                              size:
+                                value: 1331668
+                                type: number
+                              title:
+                                type: text
+                                value: Coffee-Shop-Interior.png
+                              width:
+                                value: 1024
+                                type: number
+                              height:
+                                value: 1024
+                                type: number
+                              mediaType:
+                                value: image/png
+                                type: text
+                            _source: uniform-assets
+                      title:
+                        type: text
+                        value: Interior Coffee Shop
+                      objectFit:
+                        type: select
+                        value: cover
+                      paddingTop:
+                        type: select
+                        value: None
+                      titleStyle:
+                        type: tp-title-style-parameter
+                        value: h1
+                      paddingBottom:
+                        type: select
+                        value: None
+                      containerVariant:
+                        type: select
+                        value: fluidContent
+                      textColorVariant:
+                        type: select
+                        value: Light
+              parameters:
+                title:
+                  type: text
+                  value: Interior
+                isActive:
+                  type: checkbox
+                  value: true
+        parameters:
+          size:
+            type: tp-slider-parameter
+            value: small
+      - _id: 300219b9-4836-46de-b0ee-af9a65fb433a
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+created: '2024-01-17T19:23:43.778769+00:00'
+modified: '2024-01-17T19:26:01.674144+00:00'
+pattern: false

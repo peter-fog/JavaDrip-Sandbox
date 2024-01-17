@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 20664b06-6f66-407a-8c0e-e3e730873b75
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: coffee-shop-with-2-customers.png
+    file:
+      type: file
+      value: 1efa2ae9-be1e-4981-ba10-1fbc3c98dc41
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/LqA0iHFlRliN0n88d9R44Q/_7nxQAPrRUeQma-8IC0UzQ-coffee-shop-with-2-customers.png
+      type: text
+    size:
+      value: 1111418
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2024-01-17T19:21:23.764017+00:00'
+modified: '2024-01-17T19:21:23.764017+00:00'

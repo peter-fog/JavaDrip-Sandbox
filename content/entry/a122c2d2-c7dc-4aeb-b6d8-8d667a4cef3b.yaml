@@ -1,5 +1,5 @@
-created: '2023-10-19T11:46:37.94113+00:00'
-modified: '2023-12-15T08:14:00.188638+00:00'
+created: '2024-01-17T18:38:45.020307+00:00'
+modified: '2024-01-17T18:38:45.020307+00:00'
 pattern: false
 entry:
   _id: a122c2d2-c7dc-4aeb-b6d8-8d667a4cef3b
@@ -24,7 +24,7 @@ entry:
               type: file
               value: 7a237773-421e-4b78-89ea-4bd2946e8071
             size:
-              value: 535
+              value: 538
               type: number
             title:
               type: text

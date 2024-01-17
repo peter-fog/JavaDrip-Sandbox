@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: e1960613-2798-4d40-adca-55ff0debc1b0
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: commercial-espresso.jpg
+    file:
+      type: file
+      value: 61190f0e-49af-453d-985e-38c69e2dbf85
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/LqA0iHFlRliN0n88d9R44Q/te_N4TkqQFe9wBmsl0Qqhg-commercial-espresso.jpg
+      type: text
+    size:
+      value: 190354
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2024-01-17T19:21:46.225506+00:00'
+modified: '2024-01-17T19:21:46.225506+00:00'

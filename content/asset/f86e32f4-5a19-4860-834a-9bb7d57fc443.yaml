@@ -8,7 +8,7 @@ asset:
       value: success_submit.svg
     file:
       type: file
-      value: 8e687c83-6601-428f-b3d1-227ba530c3a9
+      value: 0a90468f-2a59-48c2-86b8-53892cb6f178
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/BsS1kMqbRpKSbqP4w-v5Hg-success_submit.svg
       type: text
     size:
-      value: 5471
+      value: 5479
       type: number
     width:
       value: 133
@@ -26,5 +26,5 @@ asset:
       value: 95
       type: number
     custom: {}
-created: '2023-12-12T18:10:34.505167+00:00'
-modified: '2023-12-12T18:10:34.505167+00:00'
+created: '2024-01-17T18:31:46.938686+00:00'
+modified: '2024-01-17T18:37:24.809852+00:00'

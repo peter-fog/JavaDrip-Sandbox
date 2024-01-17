@@ -20,7 +20,7 @@ composition:
               type: file
               value: 842fb496-61fc-40f5-ac19-21bf0162bdc5
             size:
-              value: 2288
+              value: 2324
               type: number
             title:
               type: text
@@ -305,7 +305,7 @@ composition:
                     type: file
                     value: d1f9c55a-0ec6-43de-92e1-d5cd66239a2d
                   size:
-                    value: 7943
+                    value: 7952
                     type: number
                   title:
                     type: text
@@ -345,7 +345,7 @@ composition:
                     type: file
                     value: e791ba00-7af7-4241-a048-4896b10f5499
                   size:
-                    value: 1327
+                    value: 1330
                     type: number
                   title:
                     type: text
@@ -365,8 +365,8 @@ composition:
             value:
               path: https://github.com/uniformdev/uniform-component-starter-kit
               type: url
-created: '2023-11-15T12:43:20.107761+00:00'
-modified: '2023-12-13T08:38:15.332006+00:00'
+created: '2024-01-17T18:38:02.019587+00:00'
+modified: '2024-01-17T18:38:02.019587+00:00'
 pattern: true
 previewImageUrl: >-
   https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/NewJavaDripTheme/Footer_preview_image

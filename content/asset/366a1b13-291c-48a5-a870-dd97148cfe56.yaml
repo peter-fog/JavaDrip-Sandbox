@@ -8,7 +8,7 @@ asset:
       value: free_shipping.svg
     file:
       type: file
-      value: 3090fd29-a1c2-449a-8ffb-45e45d1ae6de
+      value: 0a455608-9e20-422d-b477-13d1ce6310a8
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/SR7rM9BRSB-joeaG_Jjvwg-free_shipping.svg
       type: text
     size:
-      value: 4157
+      value: 4161
       type: number
     width:
       value: 113
@@ -26,5 +26,5 @@ asset:
       value: 113
       type: number
     custom: {}
-created: '2023-12-12T16:08:42.289468+00:00'
-modified: '2023-12-12T16:08:42.289468+00:00'
+created: '2024-01-17T18:31:44.338081+00:00'
+modified: '2024-01-17T18:36:47.670784+00:00'

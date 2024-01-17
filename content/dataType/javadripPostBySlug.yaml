@@ -1,0 +1,15 @@
+id: javadripPostBySlug
+displayName: JavaDrip Post by Slug
+ttl: 30
+path: /227813160/posts/slug:$${slug}
+custom:
+  proposedName: 227813160/posts/slug:$${slug}
+method: GET
+purgeKey: df8d1ab4-9106-4f92-b03a-6fcceef5fc30
+archetype: default
+variables:
+  slug:
+    type: text
+    default: ''
+dataSourceId: javadripWordpressBlog
+allowedOnComponents: []

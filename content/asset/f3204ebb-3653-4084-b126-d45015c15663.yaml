@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: f3204ebb-3653-4084-b126-d45015c15663
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: espresso-on-table.png
+    file:
+      type: file
+      value: ff27cd07-d807-49df-9831-8e24211a483d
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/LqA0iHFlRliN0n88d9R44Q/nK9eMrCSRPGVkV4b5y0psA-espresso-on-table.png
+      type: text
+    size:
+      value: 585147
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2024-01-17T19:22:00.661747+00:00'
+modified: '2024-01-17T19:22:00.661747+00:00'

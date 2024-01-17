@@ -20,7 +20,7 @@ composition:
               type: file
               value: b8ccc399-5bc3-4057-a27e-e57d1dea2b08
             size:
-              value: 5214
+              value: 5228
               type: number
             title:
               type: text
@@ -145,8 +145,96 @@ composition:
           title:
             type: text
             value: PROMOTION
-      - _id: 441428c2-9246-49d3-8533-7a89383f617f
-        type: navigationLink
+      - _id: bd202e04-17bc-4cca-9a12-a1e796918797
+        type: navigationGroup
+        slots:
+          subNavItems:
+            - _id: 28c7959b-da71-4ad2-bfbf-4da3769a7921
+              type: navigationOneColumnMenuLink
+              variant: iconLeft
+              parameters:
+                icon:
+                  type: asset
+                  value:
+                    - _id: 366c8ea4-e686-46a8-a428-9f9e061349b3
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: coffee-icons/JD
+                        url:
+                          type: text
+                          value: >-
+                            https://res.cloudinary.com/uniform-demos/image/upload/v1692284346/coffee-icons/JD.ico
+                        size:
+                          type: number
+                          value: 7406
+                        title:
+                          type: text
+                          value: coffee-icons/JD
+                        width:
+                          type: number
+                          value: 48
+                        height:
+                          type: number
+                          value: 48
+                      _source: cloudinary-2c6d995a-4c3f-4f95-86ea-7d9f8af08667
+                link:
+                  type: link
+                  value:
+                    path: /about-us
+                    type: projectMapNode
+                    nodeId: 46d79867-b877-4ce7-9675-78fee55fc308
+                    projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+                title:
+                  type: text
+                  value: About Us
+                description:
+                  type: text
+                  value: About Javadrip
+            - _id: a8ddc60e-e154-4741-a731-e2b48c0048e1
+              type: navigationOneColumnMenuLink
+              variant: iconLeft
+              parameters:
+                icon:
+                  type: asset
+                  value:
+                    - _id: d599920c-f5b0-4130-8671-a602d7af11a5
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: coffee-icons/Group_224_pq43fs
+                        url:
+                          type: text
+                          value: >-
+                            https://res.cloudinary.com/uniform-demos/image/upload/v1693306946/coffee-icons/Group_224_pq43fs.svg
+                        size:
+                          type: number
+                          value: 1213
+                        title:
+                          type: text
+                          value: coffee-icons/Group_224_pq43fs
+                        width:
+                          type: number
+                          value: 60
+                        height:
+                          type: number
+                          value: 47
+                      _source: cloudinary-2c6d995a-4c3f-4f95-86ea-7d9f8af08667
+                link:
+                  type: link
+                  value:
+                    path: /about-us/javadrip-blog
+                    type: projectMapNode
+                    nodeId: 72f20ab0-1464-46d6-9e72-10de203fb2f2
+                    projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+                title:
+                  type: text
+                  value: JavaDrip Blog
+                description:
+                  type: text
+                  value: Blog
         parameters:
           link:
             type: link
@@ -157,7 +245,7 @@ composition:
               projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
           title:
             type: text
-            value: ABOUT US
+            value: ABOUT
     iconLinks:
       - _id: ce9daf92-5a9d-4b25-8b4b-f455c5919514
         type: shoppingCartIcon
@@ -182,7 +270,7 @@ composition:
   _overridability:
     parameters:
       syntheticGap: 'yes'
-created: '2023-11-15T12:43:20.40185+00:00'
-modified: '2023-12-12T16:14:19.790393+00:00'
+created: '2024-01-17T18:38:02.055264+00:00'
+modified: '2024-01-17T19:13:33.065354+00:00'
 pattern: true
 categoryId: 1bf9504a-07c4-4873-bbca-f235a6da182b

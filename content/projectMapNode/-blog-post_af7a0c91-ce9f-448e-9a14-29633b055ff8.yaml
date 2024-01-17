@@ -1,0 +1,10 @@
+id: af7a0c91-ce9f-448e-9a14-29633b055ff8
+name: blog-post
+type: composition
+data:
+  previewValue: how-can-i-tell-if-my-coffee-is-good
+order: 500
+path: /about-us/javadrip-blog/:blog-post
+compositionId: 7aca6fd6-93b4-41a3-b79e-f17483065d8d
+pathSegment: ':blog-post'
+projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c

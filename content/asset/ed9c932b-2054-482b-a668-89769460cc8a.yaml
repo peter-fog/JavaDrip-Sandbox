@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: ed9c932b-2054-482b-a668-89769460cc8a
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Coffee-Shop.png
+    file:
+      type: file
+      value: 9d154103-bc6e-4b22-b9bc-c0561ac153a1
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/LqA0iHFlRliN0n88d9R44Q/Vry8PkNRRNCxP8w2FYL9UA-Coffee-Shop.png
+      type: text
+    size:
+      value: 858091
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2024-01-17T18:57:12.294344+00:00'
+modified: '2024-01-17T18:57:12.294344+00:00'

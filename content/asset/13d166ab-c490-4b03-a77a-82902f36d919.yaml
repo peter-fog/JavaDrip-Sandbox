@@ -8,7 +8,7 @@ asset:
       value: bogo.svg
     file:
       type: file
-      value: 1866a3ed-1ec8-418b-81eb-e3bb2b00e582
+      value: e1ef2c8c-08f7-4519-9730-93e8c1b483be
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/7cWWeBkERz-5R_VTXqGapg-bogo.svg
       type: text
     size:
-      value: 4461
+      value: 4465
       type: number
     width:
       value: 113
@@ -26,5 +26,5 @@ asset:
       value: 113
       type: number
     custom: {}
-created: '2023-12-12T18:27:37.724782+00:00'
-modified: '2023-12-12T18:27:37.724782+00:00'
+created: '2024-01-17T18:31:43.623538+00:00'
+modified: '2024-01-17T18:36:44.717871+00:00'
