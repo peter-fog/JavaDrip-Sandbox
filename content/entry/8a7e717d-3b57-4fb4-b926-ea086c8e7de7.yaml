@@ -1,0 +1,44 @@
+created: '2023-10-19T11:46:37.040162+00:00'
+modified: '2023-12-15T08:13:58.099594+00:00'
+pattern: false
+entry:
+  _id: 8a7e717d-3b57-4fb4-b926-ea086c8e7de7
+  _name: Finally - the perfect barista coffee without leaving home.
+  _slug: finally-the-perfect-barista-coffee-without-leaving-home
+  type: hero
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 597b01d6-156d-46c2-b20f-ca71468271ce
+          type: image
+          fields:
+            id:
+              type: text
+              value: cbe60c39-8397-41cf-a64a-b163f85e3ae4
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/S6mo1qn0Tx6MCktsLcBEew-hero_4.webp
+              type: text
+            file:
+              type: file
+              value: b53195a6-3598-4ac3-8720-aa8a7c5aab71
+            size:
+              value: 100478
+              type: number
+            title:
+              type: text
+              value: hero_4.webp
+            width:
+              value: 2600
+              type: number
+            height:
+              value: 1300
+              type: number
+            mediaType:
+              value: image/webp
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Finally - the perfect barista coffee without leaving home.

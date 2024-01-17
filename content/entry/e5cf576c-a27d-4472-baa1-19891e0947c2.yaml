@@ -1,0 +1,9 @@
+created: '2023-10-19T11:46:42.874443+00:00'
+modified: '2023-12-15T08:14:13.044228+00:00'
+pattern: false
+entry:
+  _id: e5cf576c-a27d-4472-baa1-19891e0947c2
+  _name: 'New entry: Feature'
+  _slug: new-entry-feature
+  type: feature
+  fields: {}

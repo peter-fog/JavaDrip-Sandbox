@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 5825db43-46f7-4c67-90fe-9db22c886de4
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: storybook_icon.svg
+    file:
+      type: file
+      value: d1f9c55a-0ec6-43de-92e1-d5cd66239a2d
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/lzWZnzjdThuxWLiUlnhCUg-storybook_icon.svg
+      type: text
+    size:
+      value: 7943
+      type: number
+    width:
+      value: 38
+      type: number
+    height:
+      value: 38
+      type: number
+    custom: {}
+created: '2023-12-12T16:05:20.582988+00:00'
+modified: '2023-12-12T16:05:20.582988+00:00'

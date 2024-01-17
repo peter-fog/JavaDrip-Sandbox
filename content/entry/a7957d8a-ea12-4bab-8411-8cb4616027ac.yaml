@@ -1,0 +1,53 @@
+created: '2023-10-19T11:46:38.394625+00:00'
+modified: '2023-12-15T08:14:01.938476+00:00'
+pattern: false
+entry:
+  _id: a7957d8a-ea12-4bab-8411-8cb4616027ac
+  _name: Fold-away frother
+  _slug: fold-away-frother
+  type: productFeature
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: e73add32-e348-4371-8d32-5a4a25c6fcc4
+          type: image
+          fields:
+            id:
+              type: text
+              value: 661bd340-58f7-4634-969b-d27665e7f155
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/C5R117TJSfyUL0vqd6r37w-javaDrip_specialty.jpg
+              type: text
+            file:
+              type: file
+              value: c5ff659e-9a1f-402f-9379-f8998d35adac
+            size:
+              value: 164677
+              type: number
+            title:
+              type: text
+              value: javaDrip_specialty.jpg
+            width:
+              value: 1000
+              type: number
+            height:
+              value: 1000
+              type: number
+            mediaType:
+              value: image/jpeg
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Fold-away frother
+    productId:
+      type: text
+      value: javadrip-specialty-coffee-maker
+    description:
+      type: text
+      value: >-
+        The Frother Whisk is compatible with the JavaDrip Coffee Bar® System and
+        JavaDrip Hot & Cold Brewed System™. Attach it to your brewer and
+        transform hot or cold milk into silky froth in seconds.

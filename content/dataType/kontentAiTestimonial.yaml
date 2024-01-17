@@ -1,0 +1,36 @@
+id: kontentAiTestimonial
+displayName: Testimonial
+ttl: 30
+path: >-
+  /items?${searchByQuery}${languageQuery}${order}${contentTypeQuery}&limit=${limit}&depth=1
+custom:
+  searchElements:
+    - product_id
+  allowContentTypeCodeNames:
+    - testimonial
+method: GET
+purgeKey: a7823793-4aec-42a6-9829-32b24bcda344
+archetype: query
+variables:
+  limit:
+    type: text
+    default: '5'
+    displayName: Limit
+  order:
+    type: text
+    default: ''
+    displayName: Order
+  languageQuery:
+    type: text
+    default: ''
+    displayName: Language
+  searchByQuery:
+    type: text
+    default: ''
+    displayName: Search By
+  contentTypeQuery:
+    type: text
+    default: ''
+    displayName: Content Type
+dataSourceId: kontentAiDataSource
+allowedOnComponents: []

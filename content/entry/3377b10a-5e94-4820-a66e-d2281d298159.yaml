@@ -1,0 +1,44 @@
+created: '2023-10-19T11:46:30.517989+00:00'
+modified: '2023-12-15T08:13:36.971412+00:00'
+pattern: false
+entry:
+  _id: 3377b10a-5e94-4820-a66e-d2281d298159
+  _name: COFFEE MAKERS
+  _slug: coffee-makers
+  type: hero
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 835a743c-bbdf-478c-8d74-96b74bf82cc7
+          type: image
+          fields:
+            id:
+              type: text
+              value: ac4fa323-1338-49f2-96a3-548e53c06d39
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/sVxBfLPaRr6ALGdO6BYaAA-coffee_makers.webp
+              type: text
+            file:
+              type: file
+              value: 1695afa2-f62a-4cf5-b186-be4a5d482d2b
+            size:
+              value: 64522
+              type: number
+            title:
+              type: text
+              value: coffee_makers.webp
+            width:
+              value: 2600
+              type: number
+            height:
+              value: 1300
+              type: number
+            mediaType:
+              value: image/webp
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: COFFEE MAKERS

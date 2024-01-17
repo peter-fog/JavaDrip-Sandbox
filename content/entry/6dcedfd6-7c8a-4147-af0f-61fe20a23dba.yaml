@@ -1,0 +1,49 @@
+created: '2023-10-19T11:46:35.561266+00:00'
+modified: '2023-12-15T08:13:53.111581+00:00'
+pattern: false
+entry:
+  _id: 6dcedfd6-7c8a-4147-af0f-61fe20a23dba
+  _name: Request?
+  _slug: request
+  type: callToAction
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: e3ada32e-ce04-4ea6-8b32-e3ce4b6c0eef
+          type: image
+          fields:
+            id:
+              type: text
+              value: 257965d2-25e9-41fb-92b2-fc22ca5b10e2
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/7_yZh07oTymIMXrOuisWWQ-cervello_smart_landing_hero4.jpg
+              type: text
+            file:
+              type: file
+              value: 086a6410-2dbc-4c2a-a4e8-ef55cec5de80
+            size:
+              value: 945417
+              type: number
+            title:
+              type: text
+              value: cervello_smart_landing_hero4.jpg
+            width:
+              value: 2600
+              type: number
+            height:
+              value: 1300
+              type: number
+            mediaType:
+              value: image/jpeg
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Request?
+    description:
+      type: text
+      value: >-
+        Have a request for a new bean or coffee machine you can't find? Contact
+        us

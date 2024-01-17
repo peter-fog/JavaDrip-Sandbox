@@ -1,0 +1,44 @@
+created: '2023-10-19T11:46:41.477242+00:00'
+modified: '2023-12-15T08:14:10.650309+00:00'
+pattern: false
+entry:
+  _id: d9a3c2f0-c383-4f28-99d7-393b16503dd1
+  _name: Good morning, let’s find the products that help wake you
+  _slug: good-morning-lets-find-the-products-that-help-wake-you
+  type: hero
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 4fe73a7e-16cc-4795-b0a9-c4e5d9365c15
+          type: image
+          fields:
+            id:
+              type: text
+              value: 906a787d-0d47-4244-bece-553729d83c2c
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/IJ5HvTI-R2SMbce_GkqYog-geo_location.webp
+              type: text
+            file:
+              type: file
+              value: 4146d7d4-d55c-4eed-bc96-039d93f3a2a9
+            size:
+              value: 164754
+              type: number
+            title:
+              type: text
+              value: geo_location.webp
+            width:
+              value: 2880
+              type: number
+            height:
+              value: 1178
+              type: number
+            mediaType:
+              value: image/webp
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Good morning, let’s find the products that help wake you up.

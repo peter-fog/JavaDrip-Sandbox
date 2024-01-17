@@ -1,0 +1,54 @@
+created: '2023-10-19T11:46:36.638928+00:00'
+modified: '2023-12-15T08:13:56.547322+00:00'
+pattern: false
+entry:
+  _id: 891c8903-646a-4efa-aafe-bce6d2beb2a1
+  _name: 12oz. bean hopper that grinds the exact amount needed, for...
+  _slug: 12oz-bean-hopper-that-grinds-the-exact-amount-needed-for
+  type: productFeature
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 9514fd9c-4a6d-4251-b181-6ec94d9c8807
+          type: image
+          fields:
+            id:
+              type: text
+              value: 78b593ef-0889-4025-9600-89d66043b4ec
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/7yxZxvinRjCl_O8o3Cf5SA-smart_feature.webp
+              type: text
+            file:
+              type: file
+              value: 9b2c7949-0919-4bba-9ddb-6b2c9c07890d
+            size:
+              value: 105498
+              type: number
+            title:
+              type: text
+              value: smart_feature.webp
+            width:
+              value: 1224
+              type: number
+            height:
+              value: 872
+              type: number
+            mediaType:
+              value: image/webp
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: >-
+        12oz. bean hopper that grinds the exact amount needed, for optimum
+        freshness
+    description:
+      type: text
+      value: >-
+        Everyone knows that freshly-ground coffee gives you the ultimate
+        experience, especially when combined with our AI-powered ceramic burr
+        grinder. The hopper is big enough to keep a standard bag of beans
+        vacuum-sealed for freshness, but not so big you need to worry about them
+        going stale.

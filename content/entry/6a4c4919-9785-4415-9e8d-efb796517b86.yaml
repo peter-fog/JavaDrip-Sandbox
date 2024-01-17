@@ -1,0 +1,53 @@
+created: '2023-10-19T11:46:35.385934+00:00'
+modified: '2023-12-15T08:13:51.939268+00:00'
+pattern: false
+entry:
+  _id: 6a4c4919-9785-4415-9e8d-efb796517b86
+  _name: Carbon-neutral energy source
+  _slug: carbon-neutral-energy-source
+  type: productFeature
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 271fd90a-87e0-40da-a936-f96307984361
+          type: image
+          fields:
+            id:
+              type: text
+              value: e3876415-f919-470f-874e-51cb68117e56
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/4GagGapjRdSX7CNOwt3RXA-icon_flower.svg
+              type: text
+            file:
+              type: file
+              value: 81c8a7c0-f377-40e7-a319-fc284cacf87f
+            size:
+              value: 2629
+              type: number
+            title:
+              type: text
+              value: icon_flower.svg
+            width:
+              value: 60
+              type: number
+            height:
+              value: 57
+              type: number
+            mediaType:
+              value: image/svg+xml
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Carbon-neutral energy source
+    productId:
+      type: text
+      value: espresso-gpt-145
+    description:
+      type: text
+      value: >-
+        We care for the planet as much as you do. Our espresso machine is
+        powered by a sustainable and recyclable energy cell that has zero carbon
+        footprint.

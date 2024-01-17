@@ -1,0 +1,107 @@
+composition:
+  _name: Form - with CTA (cs)
+  _id: 528d0d9f-f470-4a74-9fe4-35d51cf49f68
+  type: emailSignupForm
+  parameters:
+    image:
+      type: asset
+      value:
+        - _id: 46c21b60-d7a4-42fc-88eb-ff6e7cfc7d37
+          type: image
+          fields:
+            id:
+              type: text
+              value: f6526b0d-5c64-4d58-bf35-c3df3aeb5c53
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/QPVDrfuOS1W9bOsG7TLqkA-rectangle.png
+              type: text
+            file:
+              type: file
+              value: 39c873d8-f618-46a0-974e-f66548498a92
+            size:
+              value: 1995981
+              type: number
+            title:
+              type: text
+              value: rectangle.png
+            width:
+              value: 1600
+              type: number
+            height:
+              value: 689
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: ${#jptr:/Call To Action Content/entry/title}
+    marginTop:
+      type: select
+      value: None
+    objectFit:
+      type: select
+      value: fill
+    paddingTop:
+      type: select
+      value: None
+    titleStyle:
+      type: tp-title-style-parameter
+      value: h2
+    description:
+      type: text
+      value: ${#jptr:/Call To Action Content/entry/description}
+    marginBottom:
+      type: select
+      value: None
+    overlayColor:
+      type: tp-color-style-parameter
+      value: base-300
+    paddingBottom:
+      type: select
+      value: None
+    overlayOpacity:
+      type: tp-slider-parameter
+      value: 50%
+    containerVariant:
+      type: select
+      value: fluidContent
+  _dataResources:
+    Call To Action Content:
+      type: contentstackCallToAction
+      variables:
+        query: ''
+        locale: ''
+        include: ''
+        entry_uid: bltbd4acebd73877884
+        content_type_uid: content_block
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    parameters:
+      image: 'yes'
+      title: 'yes'
+      marginTop: 'yes'
+      objectFit: 'yes'
+      buttonCopy: 'yes'
+      buttonLink: 'yes'
+      paddingTop: 'yes'
+      titleStyle: 'yes'
+      buttonStyle: 'yes'
+      description: 'yes'
+      marginBottom: 'yes'
+      overlayColor: 'yes'
+      paddingBottom: 'yes'
+      backgroundType: 'yes'
+      overlayOpacity: 'yes'
+      containerVariant: 'yes'
+      buttonAnimationType: 'yes'
+created: '2023-12-12T20:34:06.286026+00:00'
+modified: '2023-12-12T20:34:06.286026+00:00'
+pattern: true
+description: Opt-in form with CTA in Hero type layout
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/NewJavaDripTheme/SalesDemo/Patterns/Form_with_CTA_preview_image
+categoryId: ea001653-1f96-4f07-9187-a1626a4965e5

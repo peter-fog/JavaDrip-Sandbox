@@ -1,0 +1,53 @@
+created: '2023-11-21T09:18:07.275806+00:00'
+modified: '2023-12-15T08:13:58.642403+00:00'
+pattern: false
+entry:
+  _id: 8f41a06c-46c7-4313-a02d-b5bc4df68cef
+  _name: Free shipping
+  _slug: free-shipping
+  type: promotion
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 59c8c2ea-fbd6-4e27-b464-105e532a26a2
+          type: image
+          fields:
+            id:
+              type: text
+              value: 366a1b13-291c-48a5-a870-dd97148cfe56
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/SR7rM9BRSB-joeaG_Jjvwg-free_shipping.svg
+              type: text
+            file:
+              type: file
+              value: 3090fd29-a1c2-449a-8ffb-45e45d1ae6de
+            size:
+              value: 4157
+              type: number
+            title:
+              type: text
+              value: free_shipping.svg
+            width:
+              value: 113
+              type: number
+            height:
+              value: 113
+              type: number
+            mediaType:
+              value: image/svg+xml
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Free shipping
+    description:
+      type: text
+      value: >-
+        For our frequent shoppers, we're offering Free shipping when you
+        purchase one item and add another item of equal or lesser value to your
+        order. Now is your time to stock up on the products you love.
+
+
+        2ME4FREE

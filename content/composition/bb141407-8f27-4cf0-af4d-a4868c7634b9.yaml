@@ -1,0 +1,264 @@
+composition:
+  _name: Shopping Cart
+  _id: bb141407-8f27-4cf0-af4d-a4868c7634b9
+  _slug: shopping-cart
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Shopping Cart Page
+  slots:
+    pageFooter:
+      - _id: 7536f74f-16c5-4b3c-a44a-7a1ff0617cb7
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 79ad0c7c-ca05-4e0e-b940-080cc1989bf3
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: 95f0b1d9-ed0f-4d50-a0be-593e123a6df7
+        type: spacer
+        parameters:
+          thickness:
+            type: tp-slider-parameter
+            value: 10px
+      - _id: d3785f21-45e1-4d66-b1cc-cced8d7c5954
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: 470fd711-9013-44a8-b506-4ebe62a0868b
+        type: container
+        slots:
+          container-inner:
+            - _id: c623ea35-b6ec-4f42-ae5e-55798ae478e2
+              type: $personalization
+              slots:
+                pz:
+                  - _id: 3b6303ee-41f5-4c3b-8ba1-901235672d1c
+                    type: shoppingCartContent
+                    parameters:
+                      $pzCrit:
+                        type: $pzCrit
+                        value:
+                          crit:
+                            - l: isCartEmpty
+                              r: 0
+                              op: '='
+                          name: ''
+                  - _id: edb72926-0aaa-422f-9879-ca9560c093b8
+                    type: cardBlock
+                    _pattern: 9c906f38-6816-47aa-b497-7bb662a85e04
+                    _dataResources:
+                      Products Content:
+                        type: algoliaProducts
+                        variables:
+                          body: >-
+                            {"requests":[{"indexName":"products-ngm","objectID":"medium-roast-coffee-81"},{"indexName":"products-ngm","objectID":"breakfast-blend-coffee-128"},{"indexName":"products-ngm","objectID":"javadrip-specialty-coffee-maker"},{"indexName":"products-ngm","objectID":"espresso-gpt-145"},{"indexName":"products-ngm","objectID":"cervello-di-caffe-140"},{"indexName":"products-ngm","objectID":"kosmic-coffee-barista-express-espresso-machine-115"},{"indexName":"products-ngm","objectID":"dark-roast-coffee-113"}]}
+                          entryIds: >-
+                            medium-roast-coffee-81,breakfast-blend-coffee-128,javadrip-specialty-coffee-maker,espresso-gpt-145,cervello-di-caffe-140,kosmic-coffee-barista-express-espresso-machine-115,dark-roast-coffee-113
+                          facetValue: ''
+              parameters:
+                count:
+                  type: number
+                  value: '1'
+                trackingEventName:
+                  type: text
+                  value: Cart or Recommended Products
+        parameters:
+          title:
+            type: text
+            value: Shopping Cart Content
+          marginTop:
+            type: select
+            value: None
+          paddingTop:
+            type: select
+            value: None
+          marginBottom:
+            type: select
+            value: None
+          paddingBottom:
+            type: select
+            value: None
+      - _id: 32c72240-5668-42ce-b944-69ac4956d306
+        type: $personalization
+        slots:
+          pz:
+            - _id: 65c0031d-31ec-40e2-94c4-bd018b267d4c
+              type: cardBlock
+              _pattern: 9c906f38-6816-47aa-b497-7bb662a85e04
+              _dataResources:
+                Products Content:
+                  type: algoliaProducts
+                  variables:
+                    body: >-
+                      {"requests":[{"indexName":"products-ngm","objectID":"javadrip-specialty-coffee-maker"},{"indexName":"products-ngm","objectID":"espresso-gpt-145"},{"indexName":"products-ngm","objectID":"cervello-di-caffe-140"},{"indexName":"products-ngm","objectID":"kosmic-coffee-barista-express-espresso-machine-115"}]}
+                    entryIds: >-
+                      javadrip-specialty-coffee-maker,espresso-gpt-145,cervello-di-caffe-140,kosmic-coffee-barista-express-espresso-machine-115
+                    facetValue: ''
+            - _id: 8c473e5a-fa40-43ec-a4f1-d95a2ad0b30b
+              type: cardBlock
+              _pattern: 9c906f38-6816-47aa-b497-7bb662a85e04
+              _dataResources:
+                Products Content:
+                  type: algoliaProducts
+                  variables:
+                    body: >-
+                      {"requests":[{"indexName":"products-ngm","objectID":"organic-blend-coffee-133"},{"indexName":"products-ngm","objectID":"dark-roast-coffee-113"},{"indexName":"products-ngm","objectID":"medium-roast-coffee-81"},{"indexName":"products-ngm","objectID":"house-blend-coffee-131"}]}
+                    entryIds: >-
+                      organic-blend-coffee-133,dark-roast-coffee-113,medium-roast-coffee-81,house-blend-coffee-131
+                    facetValue: ''
+        parameters:
+          count:
+            type: number
+            value: '1'
+          trackingEventName:
+            type: text
+            value: Shopping Cart
+  _overrides:
+    65c0031d-31ec-40e2-94c4-bd018b267d4c:
+      parameters:
+        title:
+          type: text
+          value: Popular Coffee Makers
+        $pzCrit:
+          type: $pzCrit
+          value:
+            crit:
+              - l: isCartEmpty
+                r: 0
+                op: '='
+              - l: coffeeBeansInterest
+                op: +
+            name: 'Card Block: Popular Coffee Makers'
+        description:
+          type: text
+          value: Why not pair your beans with a brand new coffee maker?
+    79ad0c7c-ca05-4e0e-b940-080cc1989bf3:
+      parameters:
+        syntheticGap:
+          type: tp-slider-parameter
+          value: Small
+    8c473e5a-fa40-43ec-a4f1-d95a2ad0b30b:
+      parameters:
+        title:
+          type: text
+          value: Popular Coffee Beans
+        $pzCrit:
+          type: $pzCrit
+          value:
+            crit:
+              - l: isCartEmpty
+                r: 0
+                op: '='
+              - l: coffeeMakersInterest
+                op: +
+            name: 'Card Block: Popular Coffee Makers'
+        description:
+          type: text
+          value: >-
+            Why not pair your new coffee maker with a some of our best selling
+            beans?
+    edb72926-0aaa-422f-9879-ca9560c093b8:
+      parameters:
+        title:
+          type: text
+          value: Products
+        $pzCrit:
+          type: $pzCrit
+          value:
+            crit:
+              - l: isCartEmpty
+                r: '1'
+                op: '='
+            name: 'Card Block: Our Recommendations'
+        description:
+          type: text
+          value: >-
+            You don't have anything in your cart yet - check out favorite
+            products
+    21a9d113-b1a4-4f4e-90dd-9c2876400544|98ef4404-7adc-4d1b-bd62-e17bc229352b:
+      parameters:
+        buttonLink:
+          type: link
+          value:
+            path: /products/:product-slug
+            type: projectMapNode
+            nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+            dynamicInputValues:
+              product-slug: ${#jptr:/Product Content results Loop Item/slug}
+        buttonStyle:
+          type: tp-button-style-parameter
+          value: secondary
+    39d91a75-480e-4af9-8654-92f51844f997|98ef4404-7adc-4d1b-bd62-e17bc229352b:
+      parameters:
+        buttonLink:
+          type: link
+          value:
+            path: /products/:product-slug
+            type: projectMapNode
+            nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+            dynamicInputValues:
+              product-slug: ${#jptr:/Product Content results Loop Item/slug}
+        buttonStyle:
+          type: tp-button-style-parameter
+          value: secondary
+    65c0031d-31ec-40e2-94c4-bd018b267d4c|98ef4404-7adc-4d1b-bd62-e17bc229352b:
+      parameters:
+        buttonLink:
+          type: link
+          value:
+            path: /products/:product-slug
+            type: projectMapNode
+            nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+            dynamicInputValues:
+              product-slug: ${#jptr:/Product Content results Loop Item/slug}
+        buttonStyle:
+          type: tp-button-style-parameter
+          value: primary
+    8c473e5a-fa40-43ec-a4f1-d95a2ad0b30b|98ef4404-7adc-4d1b-bd62-e17bc229352b:
+      parameters:
+        buttonLink:
+          type: link
+          value:
+            path: /products/:product-slug
+            type: projectMapNode
+            nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+            dynamicInputValues:
+              product-slug: ${#jptr:/Product Content results Loop Item/slug}
+        buttonStyle:
+          type: tp-button-style-parameter
+          value: primary
+    edb72926-0aaa-422f-9879-ca9560c093b8|98ef4404-7adc-4d1b-bd62-e17bc229352b:
+      parameters:
+        buttonLink:
+          type: link
+          value:
+            path: /products/:product-slug
+            type: projectMapNode
+            nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+            dynamicInputValues:
+              product-slug: ${#jptr:/Product Content results Loop Item/slug}
+        buttonStyle:
+          type: tp-button-style-parameter
+          value: secondary
+created: '2023-12-12T14:49:47.804879+00:00'
+modified: '2023-12-12T14:49:47.804879+00:00'
+pattern: false

@@ -1,0 +1,32 @@
+id: kontentAiFAQs
+displayName: FAQs
+ttl: 30
+path: /items/
+custom:
+  searchElements:
+    - title
+  displayNameElement: title
+  allowContentTypeCodeNames:
+    - faq
+method: GET
+purgeKey: 32b0bacb-f72e-4c22-85ca-219aa76b1e11
+archetype: multipleItems
+variables:
+  language:
+    type: text
+    default: ''
+    displayName: Language
+  itemsCodenames:
+    type: text
+    default: ''
+    displayName: Items Codenames
+parameters:
+  - key: depth
+    value: '1'
+  - key: language
+    value: ${language}
+    omitIfEmpty: true
+  - key: system.codename[in]
+    value: ${itemsCodenames}
+dataSourceId: kontentAiDataSource
+allowedOnComponents: []

@@ -1,0 +1,57 @@
+created: '2023-10-19T11:46:37.615292+00:00'
+modified: '2023-12-15T08:13:59.283413+00:00'
+pattern: false
+entry:
+  _id: 980aad4a-45da-4265-87ad-9edc572e85ed
+  _name: Specialty What's Included
+  _slug: specialty-whats-included
+  type: featuredCallout
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: a95655e0-a528-4528-87c6-d0abf3e88a0b
+          type: image
+          fields:
+            id:
+              type: text
+              value: c221a8fe-c252-4ec0-be16-d52bcbe268e3
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/lYzy_CrAQTKklMFtu7uC_w-javaDrip_specialty_2.jpg
+              type: text
+            file:
+              type: file
+              value: 7391d994-375b-4b1a-bd66-9b0f65ab7c9f
+            size:
+              value: 141170
+              type: number
+            title:
+              type: text
+              value: javaDrip_specialty_2.jpg
+            width:
+              value: 1000
+              type: number
+            height:
+              value: 1000
+              type: number
+            mediaType:
+              value: image/jpeg
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Specialty What's Included
+    description:
+      type: text
+      value: |-
+        WHAT'S INCLUDED:
+
+        - 50 oz. (10-cup) glass carafe
+        - Fold-away frother
+        - Recipe inspiration guide
+        - Gold-tone permanent filter
+        - Smart Scoop
+        - Removable water reservoir
+        - Quick Start guide
+        - Owner's Guide

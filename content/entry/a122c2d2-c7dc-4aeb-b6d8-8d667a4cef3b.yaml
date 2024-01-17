@@ -1,0 +1,54 @@
+created: '2023-10-19T11:46:37.94113+00:00'
+modified: '2023-12-15T08:14:00.188638+00:00'
+pattern: false
+entry:
+  _id: a122c2d2-c7dc-4aeb-b6d8-8d667a4cef3b
+  _name: Holographic interface
+  _slug: holographic-interface
+  type: productFeature
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 268f2dc6-14e1-467e-be6a-d1cc797d012c
+          type: image
+          fields:
+            id:
+              type: text
+              value: 4392dc5d-5ccc-480d-b6cb-2741b75a14c3
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/h8g3LW7QQVCnwjGqpK5Y-g-diamond.svg
+              type: text
+            file:
+              type: file
+              value: 7a237773-421e-4b78-89ea-4bd2946e8071
+            size:
+              value: 535
+              type: number
+            title:
+              type: text
+              value: diamond.svg
+            width:
+              value: 60
+              type: number
+            height:
+              value: 54
+              type: number
+            mediaType:
+              value: image/svg+xml
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Holographic interface
+    productId:
+      type: text
+      value: espresso-gpt-145
+    description:
+      type: text
+      value: >
+        Touchscreens are a thing of the past. EspressoGPT 's floating
+        holographic interface offers an intuitive user experience. Adjust
+        settings, browse recipes, or get a virtual barista tutorial with a
+        simple hand gesture.

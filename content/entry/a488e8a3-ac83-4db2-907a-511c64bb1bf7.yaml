@@ -1,0 +1,61 @@
+created: '2023-10-19T11:46:38.37624+00:00'
+modified: '2023-12-15T08:14:01.23303+00:00'
+pattern: false
+entry:
+  _id: a488e8a3-ac83-4db2-907a-511c64bb1bf7
+  _name: I recommend
+  _slug: i-recommend
+  type: testimonial
+  fields:
+    stars:
+      type: text
+      value: '5'
+    title:
+      type: text
+      value: I recommend
+    picture:
+      type: asset
+      value:
+        - _id: 645e2444-57bb-4728-97fc-e3927d5efd36
+          type: image
+          fields:
+            id:
+              type: text
+              value: 12d37c68-42e4-4694-b221-d4754482a666
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/7NhgSLY2Qq-KmudgtBUa8Q-person_photo_1.jpg
+              type: text
+            file:
+              type: file
+              value: 435c1360-a258-4602-90cd-0e61d03ca683
+            size:
+              value: 8294
+              type: number
+            title:
+              type: text
+              value: person_photo_1.jpg
+            width:
+              value: 256
+              type: number
+            height:
+              value: 256
+              type: number
+            mediaType:
+              value: image/jpeg
+              type: text
+          _source: uniform-assets
+    lastName:
+      type: text
+      value: Gibbons
+    firstName:
+      type: text
+      value: 'Hector '
+    productId:
+      type: text
+      value: javadrip-specialty-coffee-maker
+    experience:
+      type: text
+      value: >-
+        Love this machine! I can make a single cup or a full pot. Specialty
+        coffee feature is a plus!!

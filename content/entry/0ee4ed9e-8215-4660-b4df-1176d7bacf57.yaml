@@ -1,0 +1,50 @@
+created: '2023-10-19T11:46:28.281525+00:00'
+modified: '2023-12-15T08:13:31.769412+00:00'
+pattern: false
+entry:
+  _id: 0ee4ed9e-8215-4660-b4df-1176d7bacf57
+  _name: The drip on display
+  _slug: the-drip-on-display
+  type: hero
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 8b6a3a9e-6e40-4c59-a035-73d0edb2e461
+          type: image
+          fields:
+            id:
+              type: text
+              value: a13dd5cb-a03f-4e22-9214-954af5f1618f
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/-rYIVneERrGKk1UaQmmqsg-espressoGPT_hero_2.jpg
+              type: text
+            file:
+              type: file
+              value: e3d6fde9-c6ee-4824-931d-4d4bbb1d0b43
+            size:
+              value: 235654
+              type: number
+            title:
+              type: text
+              value: espressoGPT_hero_2.jpg
+            width:
+              value: 2048
+              type: number
+            height:
+              value: 1423
+              type: number
+            mediaType:
+              value: image/jpeg
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: The drip on display
+    description:
+      type: text
+      value: >-
+        Crystal-clear clarity, ensuring users can easily select their desired
+        settings and monitor the brewing process in real-time. Its intuitive
+        interface and vibrant visuals elevate the user experience.

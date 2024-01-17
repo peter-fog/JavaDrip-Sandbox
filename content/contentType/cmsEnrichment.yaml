@@ -1,0 +1,26 @@
+id: cmsEnrichment
+name: CMS Enrichment
+created: '2023-12-12T16:34:01.996735+00:00'
+updated: '2023-12-15T09:02:50.998948+00:00'
+slugSettings:
+  required: 'no'
+fields:
+  - id: cat
+    name: Category
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: key
+    name: Key
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: str
+    name: Strength
+    type: text
+    helpText: ''
+    typeConfig: null
+entryName: cat
+description: ''
+icon: file-document
+type: block

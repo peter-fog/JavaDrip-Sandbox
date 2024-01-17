@@ -1,0 +1,49 @@
+created: '2023-10-19T11:46:31.412952+00:00'
+modified: '2023-12-15T08:13:38.961125+00:00'
+pattern: false
+entry:
+  _id: 3688e85a-1749-45be-afde-ba225238a909
+  _name: Perfect specs
+  _slug: perfect-specs
+  type: hero
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: d3b73031-c8d5-4d24-802d-ee52e28c6e00
+          type: image
+          fields:
+            id:
+              type: text
+              value: 4d2e4a85-61a8-4465-9753-d1a20fb3589a
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/4_6U9gIjQNmr01Lu7drUag-espressoGPT_hero_1.png
+              type: text
+            file:
+              type: file
+              value: 373efa49-0b30-4ce8-8d20-d07b0b58c9e5
+            size:
+              value: 286635
+              type: number
+            title:
+              type: text
+              value: espressoGPT_hero_1.png
+            width:
+              value: 2788
+              type: number
+            height:
+              value: 1552
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Perfect specs
+    description:
+      type: text
+      value: >-
+        Modern design seamlessly blends minimalistic elegance with cutting-edge
+        functionality, making it a statement piece in any contemporary kitchen. 

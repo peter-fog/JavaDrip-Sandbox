@@ -1,0 +1,165 @@
+created: '2023-10-19T11:46:43.45773+00:00'
+modified: '2023-12-15T08:14:16.89655+00:00'
+pattern: false
+entry:
+  _id: ee7b8b70-93c5-4786-8eca-69c7b496316f
+  _name: My first day with Cervello di Caffè.
+  _slug: my-first-day-with-cervello-di-caffe
+  type: article
+  fields:
+    tag:
+      type: select
+      value: CoffeeMakers
+    title:
+      type: text
+      value: My first day with Cervello di Caffè.
+    content:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce tristique interdum nisl, sed egestas lorem tincidunt
+                    et. Nullam quis leo gravida justo euismod lobortis. Nunc mi
+                    massa, elementum eu odio et, ultrices malesuada sapien. Ut
+                    porttitor metus nisl, nec rhoncus eros malesuada a. Maecenas
+                    a tellus pellentesque, laoreet est ac, luctus est. Vivamus
+                    tincidunt hendrerit urna, vel rutrum lacus commodo at. In eu
+                    ipsum nisl. Duis massa odio, condimentum condimentum quam a,
+                    gravida dignissim est. Donec condimentum, magna vitae
+                    bibendum congue, libero est imperdiet lorem, vel tristique
+                    metus arcu eget sem. Maecenas laoreet ligula sed fringilla
+                    elementum. Pellentesque aliquam lobortis metus, id tristique
+                    arcu. Nam non fermentum purus. Vivamus nisi metus, ornare
+                    eget nibh et, condimentum hendrerit odio. Fusce tempus at
+                    elit eu sollicitudin. Vestibulum eget enim sed ligula
+                    ultricies 
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: ltr
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    Suspendisse vitae quam sit amet elit volutpat varius quis
+                    vel nisl. Nam aliquam et nisl id gravida. Vivamus non lacus
+                    vel quam tincidunt bibendum. In vel mattis nibh. Sed egestas
+                    dolor ac metus scelerisque pretium. Pellentesque habitant
+                    morbi tristique senectus et netus et malesuada fames ac
+                    turpis egestas. Aenean dapibus vestibulum dolor. Cras
+                    pharetra mauris eget orci blandit scelerisque. Mauris
+                    viverra odio ut diam fringilla vestibulum. Curabitur
+                    lobortis condimentum tincidunt. Integer eu viverra lectus.
+                    Integer posuere gravida nisi. Fusce fringilla nisi nulla,
+                    nec convallis mi rhoncus vitae. Quisque efficitur lectus
+                    eros, nec sollicitudin tortor sollicitudin nec.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: ltr
+            - tag: h3
+              type: heading
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: "Subtitle style is here\L"
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 1
+                  version: 1
+              direction: ltr
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    Interdum et malesuada fames ac ante ipsum primis in
+                    faucibus. Nulla placerat quis arcu quis varius. Etiam urna
+                    turpis, semper id consequat sed, aliquam ut risus. Morbi
+                    tempus diam enim, a porta leo varius a. Pellentesque cursus,
+                    erat quis volutpat feugiat, velit libero tempor tellus, sit
+                    amet sagittis est orci sed nulla. Etiam tincidunt elit nibh,
+                    et tempor ipsum pellentesque nec. Vivamus ac euismod orci.
+                    In hac habitasse platea dictumst. Vestibulum id consequat
+                    nisi, nec hendrerit nisi. Sed sit amet orci nec diam
+                    vestibulum efficitur. Curabitur condimentum condimentum
+                    venenatis. In ac venenatis orci, at commodo purus. Sed et
+                    quam elementum, varius leo vitae, tempus massa. Sed id
+                    viverra tortor. Phasellus interdum, eros id pellentesque
+                    pulvinar, eros nisi facilisis dui, sit amet sollicitudin
+                    elit augue eu dolor. Quisque aliquam orci massa, tempus
+                    cursus eros accumsan sit amet.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: ltr
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children: []
+              direction: ltr
+          direction: ltr
+    thumbnail:
+      type: asset
+      value:
+        - _id: 5817dd66-53f6-470b-b666-4acbef2ae20b
+          type: image
+          fields:
+            id:
+              type: text
+              value: d64f4017-62e9-451d-bf14-6488af3f5d46
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/9KIJdnEXRxGvp2niSKKjLQ-first_day_articles.jpg
+              type: text
+            file:
+              type: file
+              value: d8a7c316-2b86-4166-b55d-433116e8bd46
+            size:
+              value: 161789
+              type: number
+            title:
+              type: text
+              value: first_day_articles.jpg
+            width:
+              value: 686
+              type: number
+            height:
+              value: 338
+              type: number
+            mediaType:
+              value: image/jpeg
+              type: text
+          _source: uniform-assets
+    description:
+      type: text
+      value: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique
+        interdum nisl, sed egestas lorem tincidunt et.

@@ -1,0 +1,38 @@
+id: kontentAiFeatures
+displayName: Features
+ttl: 30
+path: >-
+  /items?${searchByQuery}${languageQuery}${order}${contentTypeQuery}&limit=${limit}&depth=1
+custom:
+  imageElement: image
+  searchElements:
+    - product_id
+  displayNameElement: title
+  allowContentTypeCodeNames:
+    - product_feature
+method: GET
+purgeKey: a02b5141-d8a6-4974-95cb-d8d160953c05
+archetype: query
+variables:
+  limit:
+    type: text
+    default: '5'
+    displayName: Limit
+  order:
+    type: text
+    default: ''
+    displayName: Order
+  languageQuery:
+    type: text
+    default: ''
+    displayName: Language
+  searchByQuery:
+    type: text
+    default: ''
+    displayName: Search By
+  contentTypeQuery:
+    type: text
+    default: ''
+    displayName: Content Type
+dataSourceId: kontentAiDataSource
+allowedOnComponents: []

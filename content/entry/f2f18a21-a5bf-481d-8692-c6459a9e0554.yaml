@@ -1,0 +1,65 @@
+created: '2023-10-19T11:46:44.396538+00:00'
+modified: '2023-12-15T08:14:18.745534+00:00'
+pattern: false
+entry:
+  _id: f2f18a21-a5bf-481d-8692-c6459a9e0554
+  _name: EspressoGPT Overview
+  _slug: espressogpt-overview
+  type: productFeature
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: ba5fac5a-d752-41aa-8f40-c4cd2f706e84
+          type: image
+          fields:
+            id:
+              type: text
+              value: 24befc1a-4849-46ed-b857-a53ece4f5985
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/XH9_6rboQjqEZflRAjWGMg-espressoGPT_image_1.jpg
+              type: text
+            file:
+              type: file
+              value: f7484a3a-4eca-4f8f-a2f5-2d5dc4588ae2
+            size:
+              value: 123117
+              type: number
+            title:
+              type: text
+              value: espressoGPT_image_1.jpg
+            width:
+              value: 1486
+              type: number
+            height:
+              value: 960
+              type: number
+            mediaType:
+              value: image/jpeg
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: EspressoGPT Overview
+    productId:
+      type: text
+      value: espresso-gpt-145
+    description:
+      type: text
+      value: >-
+        Where future technologies meet timeless taste.  Experience coffee like
+        never before. From the moment you power up the EspressoGPT, you're not
+        just brewing an espresso—you're entering the future of coffee. Welcome
+        to a universe of unparalleled taste and sophistication.
+
+
+        When we speak of the 'perfect coffee bean', it's more than just a
+        catchphrase. To us, it embodies a journey of passion, precision, and
+        perseverance.  Featuring an intuitive interface holographic display, a
+        modern design, and AI powered taste preferences
+
+
+        EspressoGPT is not just a product but a testament to our ethos. It
+        represents our unwavering commitment to delivering our best to a global
+        community of coffee lovers.

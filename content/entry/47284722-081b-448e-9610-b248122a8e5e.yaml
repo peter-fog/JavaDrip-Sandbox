@@ -1,0 +1,52 @@
+created: '2023-11-21T09:18:04.708752+00:00'
+modified: '2023-12-15T08:13:42.337432+00:00'
+pattern: false
+entry:
+  _id: 47284722-081b-448e-9610-b248122a8e5e
+  _name: Buy one, get one free
+  _slug: buy-one-get-one-free
+  type: promotion
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 22ab64df-8159-42f7-87ad-095bc4f279ae
+          type: image
+          fields:
+            id:
+              type: text
+              value: 13d166ab-c490-4b03-a77a-82902f36d919
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/7cWWeBkERz-5R_VTXqGapg-bogo.svg
+              type: text
+            file:
+              type: file
+              value: 1866a3ed-1ec8-418b-81eb-e3bb2b00e582
+            size:
+              value: 4461
+              type: number
+            title:
+              type: text
+              value: bogo.svg
+            width:
+              value: 113
+              type: number
+            height:
+              value: 113
+              type: number
+            mediaType:
+              value: image/svg+xml
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Buy one, get one free
+    description:
+      type: text
+      value: >-
+        Purchase one item and receive another item of equal or lesser value for
+        free. Now is your time to stock up on the products you love.
+
+
+        JD-BOGO

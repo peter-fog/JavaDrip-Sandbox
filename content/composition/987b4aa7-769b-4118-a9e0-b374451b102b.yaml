@@ -1,0 +1,451 @@
+composition:
+  _name: Home
+  _id: 987b4aa7-769b-4118-a9e0-b374451b102b
+  _slug: /
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Home Page
+  slots:
+    pageFooter:
+      - _id: 14be8abf-2cdf-4f00-b788-ef63e05c3a0f
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 4322cc34-6a4c-4585-a0ea-4f526b98c2f4
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: 612324ab-44d8-4ac5-bc6b-1aa38bb226bb
+        type: $personalization
+        slots:
+          pz:
+            - _id: 4cd6186d-6014-484b-bfaf-62088ef6d84c
+              type: hero
+              variant: backgroundImage
+              parameters:
+                image:
+                  type: asset
+                  value:
+                    - _id: f9fc0ddf-c2fb-4723-91d8-20cedbc98699
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 081a91e1-ba9d-4809-afb6-34e15f5acaac
+                        url:
+                          value: >-
+                            https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/nh_az4FHS4SS9A672gBahw-cervello_smart_landing_hero.png
+                          type: text
+                        file:
+                          type: file
+                          value: 93accf7b-0fa9-4bed-a97d-fab142d6f657
+                        size:
+                          value: 456876
+                          type: number
+                        title:
+                          type: text
+                          value: cervello_smart_landing_hero.png
+                        width:
+                          value: 1024
+                          type: number
+                        height:
+                          value: 512
+                          type: number
+                        mediaType:
+                          value: image/png
+                          type: text
+                      _source: uniform-assets
+                title:
+                  type: text
+                  value: EspressoGPT is here
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: bigSpender
+                        r: 0
+                        op: '>'
+                    name: 'Hero: Cervello is here!'
+                objectFit:
+                  type: select
+                  value: cover
+                paddingTop:
+                  type: select
+                  value: None
+                titleStyle:
+                  type: tp-title-style-parameter
+                  value: h1
+                description:
+                  type: text
+                  value: >-
+                    this machine is able to detect your coffee needs and adjust
+                    to your taste and habits.
+                eyebrowText:
+                  type: text
+                  value: smartest coffee machine in the world
+                overlayColor:
+                  type: tp-color-style-parameter
+                  value: base-300
+                paddingBottom:
+                  type: select
+                  value: None
+                overlayOpacity:
+                  type: tp-slider-parameter
+                  value: 50%
+                containerVariant:
+                  type: select
+                  value: fluidContent
+                textColorVariant:
+                  type: select
+                  value: Light
+                primaryButtonCopy:
+                  type: text
+                  value: See it in action!
+                primaryButtonLink:
+                  type: link
+                  value:
+                    path: /products/espresso-gpt-145
+                    type: url
+                primaryButtonStyle:
+                  type: tp-button-style-parameter
+                  value: secondary
+            - _id: bcd76746-f548-49f0-9a03-81b0c91783a1
+              type: productInfo
+              _pattern: 74cc4c81-50de-4bcc-a05a-00ad738a3f45
+              _dataResources:
+                Product Content:
+                  type: algoliaProduct
+                  variables:
+                    body: >-
+                      {"requests":[{"indexName":"products-ngm","objectID":"espresso-gpt-145"}]}
+                    entryIds: espresso-gpt-145
+                    facetValue: ''
+            - _id: ae4ec7cb-e27f-4822-b3f2-d4cb83002997
+              type: hero
+              _pattern: b3d6043e-0fd2-4ca1-bc7f-43642e7ede28
+              _dataResources:
+                Hero Content:
+                  type: hero
+                  variables:
+                    entryId: 56fd52c8-005b-4ff8-a940-f519d2bb826e
+            - _id: 280ea423-4882-4b5f-ba29-6d8e3767e507
+              type: hero
+              _pattern: b3d6043e-0fd2-4ca1-bc7f-43642e7ede28
+              _dataResources:
+                Hero Content:
+                  type: hero
+                  variables:
+                    entryId: d7bf42e5-d347-40b4-b143-87b088b8698f
+            - _id: cebabef6-4ee1-47e6-b804-95946ec6c1d3
+              type: hero
+              _pattern: b3d6043e-0fd2-4ca1-bc7f-43642e7ede28
+              _dataResources:
+                Hero Content:
+                  type: hero
+                  variables:
+                    entryId: 70bbe9fa-16ce-4e55-aaa0-432e114be106
+        parameters:
+          count:
+            type: number
+            value: '1'
+          trackingEventName:
+            type: text
+            value: Home Hero
+      - _id: 1006dd1b-b35b-4ca8-bba8-de80d47ae810
+        type: callToAction
+        _pattern: a7aa42e0-9225-4909-8fb1-9d1bac72848c
+        _dataResources:
+          Call To Action Content:
+            type: callToAction
+            variables:
+              entryId: da54b631-13fe-43b8-a427-01d1b8ea430d
+      - _id: 05d5d39a-6949-4f30-8e8f-cd1d366452f2
+        type: cardBlock
+        _pattern: 9c906f38-6816-47aa-b497-7bb662a85e04
+        _dataResources:
+          Products Content:
+            type: algoliaProducts
+            variables:
+              body: >-
+                {"requests":[{"indexName":"products-ngm","objectID":"espresso-gpt-145"},{"indexName":"products-ngm","objectID":"cervello-di-caffe-140"},{"indexName":"products-ngm","objectID":"javadrip-specialty-coffee-maker"},{"indexName":"products-ngm","objectID":"kosmic-coffee-barista-express-espresso-machine-115"},{"indexName":"products-ngm","objectID":"royale-iq-espresso-machine-117"},{"indexName":"products-ngm","objectID":"kosmic-coffee-stainless-steel-precision-brewer-116"},{"indexName":"products-ngm","objectID":"impresso-pump-espresso-118"}]}
+              entryIds: >-
+                espresso-gpt-145,cervello-di-caffe-140,javadrip-specialty-coffee-maker,kosmic-coffee-barista-express-espresso-machine-115,royale-iq-espresso-machine-117,kosmic-coffee-stainless-steel-precision-brewer-116,impresso-pump-espresso-118
+              facetValue: ''
+      - _id: 604f6c17-4ee8-457b-9ada-a710237f9741
+        type: container
+        slots:
+          container-inner:
+            - _id: e0a70c29-840b-4a52-9657-0ac9c6338f2f
+              type: cardBlock
+              _pattern: 9c906f38-6816-47aa-b497-7bb662a85e04
+              _dataResources:
+                Products Content:
+                  type: algoliaProducts
+                  variables:
+                    body: >-
+                      {"requests":[{"indexName":"products-ngm","objectID":"medium-roast-coffee-81"},{"indexName":"products-ngm","objectID":"light-roast-coffee-80"},{"indexName":"products-ngm","objectID":"peruvian-blend-coffee-134"},{"indexName":"products-ngm","objectID":"breakfast-blend-coffee-128"},{"indexName":"products-ngm","objectID":"organic-blend-coffee-133"},{"indexName":"products-ngm","objectID":"dark-roast-coffee-113"}]}
+                    entryIds: >-
+                      medium-roast-coffee-81,light-roast-coffee-80,peruvian-blend-coffee-134,breakfast-blend-coffee-128,organic-blend-coffee-133,dark-roast-coffee-113
+                    facetValue: Beans
+        parameters:
+          title:
+            type: text
+            value: Our smart coffee beans
+          paddingTop:
+            type: select
+            value: Medium
+          paddingBottom:
+            type: select
+            value: Medium
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+  _overrides:
+    05d5d39a-6949-4f30-8e8f-cd1d366452f2:
+      variant: carousel
+      parameters:
+        title:
+          type: text
+          value: Our smart coffee machines
+        buttonCopy:
+          type: text
+          value: See Coffee Makers
+        buttonLink:
+          type: link
+          value:
+            path: /coffee-makers
+            type: projectMapNode
+            nodeId: ea684346-109c-4b11-82a5-2a982d2dd795
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+        description:
+          type: text
+          value: Coffee machines that learn to optimize for your taste buds
+    1006dd1b-b35b-4ca8-bba8-de80d47ae810:
+      parameters:
+        titleStyle:
+          type: tp-title-style-parameter
+          value: h2
+    280ea423-4882-4b5f-ba29-6d8e3767e507:
+      variant: imageRight
+      parameters:
+        $pzCrit:
+          type: $pzCrit
+          value:
+            crit:
+              - l: coffeeMakersInterest
+                r: 0
+                op: '>'
+            name: 'Hero: ${#jptr:/Hero Content/entry/fields/title/value}'
+        paddingTop:
+          type: select
+          value: Small
+        eyebrowText:
+          type: text
+          value: PERSONALIZED DUE TO YOUR INTEREST IN COFFEE MACHINES
+        paddingBottom:
+          type: select
+          value: Medium
+        backgroundType:
+          type: tp-background-type-parameter
+          value: Dark
+        textColorVariant:
+          type: select
+          value: Light
+        primaryButtonCopy:
+          type: text
+          value: See all coffee makers
+        primaryButtonLink:
+          type: link
+          value:
+            path: /coffee-makers
+            type: projectMapNode
+            nodeId: ea684346-109c-4b11-82a5-2a982d2dd795
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+        primaryButtonStyle:
+          type: tp-button-style-parameter
+          value: secondary
+    4322cc34-6a4c-4585-a0ea-4f526b98c2f4:
+      parameters:
+        syntheticGap:
+          type: tp-slider-parameter
+          value: Small
+    ae4ec7cb-e27f-4822-b3f2-d4cb83002997:
+      variant: imageLeft
+      parameters:
+        $pzCrit:
+          type: $pzCrit
+          value:
+            crit:
+              - l: coffeeBeansInterest
+                r: 0
+                op: '>'
+            name: 'Hero: ${#jptr:/Hero Content/entry/fields/title/value}'
+        paddingTop:
+          type: select
+          value: Small
+        paddingBottom:
+          type: select
+          value: Medium
+        backgroundType:
+          type: tp-background-type-parameter
+          value: Dark
+        textColorVariant:
+          type: select
+          value: Light
+        primaryButtonCopy:
+          type: text
+          value: See all beans
+        primaryButtonLink:
+          type: link
+          value:
+            path: /beans
+            type: projectMapNode
+            nodeId: 159b02be-f6b3-4752-8fc7-9689b67236b2
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+        primaryButtonStyle:
+          type: tp-button-style-parameter
+          value: secondary
+    bcd76746-f548-49f0-9a03-81b0c91783a1:
+      parameters:
+        $pzCrit:
+          type: $pzCrit
+          value:
+            crit:
+              - l: int_espressoGPT
+                op: +
+            name: 'Product Info: ${#jptr:/Product Content/results/0/name}'
+        objectFit:
+          type: select
+          value: cover
+        fullHeight:
+          type: checkbox
+          value: null
+    cebabef6-4ee1-47e6-b804-95946ec6c1d3:
+      parameters:
+        eyebrowText:
+          type: text
+          value: welcome to javadrip
+        overlayColor:
+          type: tp-color-style-parameter
+          value: base-300
+        textColorVariant:
+          type: select
+          value: Light
+        primaryButtonCopy:
+          type: text
+          value: Shop beans
+        primaryButtonLink:
+          type: link
+          value:
+            path: /beans
+            type: projectMapNode
+            nodeId: 159b02be-f6b3-4752-8fc7-9689b67236b2
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+        secondaryButtonCopy:
+          type: text
+          value: Shop machines
+        secondaryButtonLink:
+          type: link
+          value:
+            path: /coffee-makers
+            type: projectMapNode
+            nodeId: ea684346-109c-4b11-82a5-2a982d2dd795
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+        secondaryButtonStyle:
+          type: tp-button-style-parameter
+          value: secondary
+    e0a70c29-840b-4a52-9657-0ac9c6338f2f:
+      variant: carousel
+      parameters:
+        title:
+          type: text
+          value: Our smart coffee beans
+        buttonCopy:
+          type: text
+          value: See coffee beans
+        buttonLink:
+          type: link
+          value:
+            path: /beans
+            type: projectMapNode
+            nodeId: 159b02be-f6b3-4752-8fc7-9689b67236b2
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+        buttonStyle:
+          type: tp-button-style-parameter
+          value: secondary
+        textColorVariant:
+          type: select
+          value: Light
+    05d5d39a-6949-4f30-8e8f-cd1d366452f2|98ef4404-7adc-4d1b-bd62-e17bc229352b:
+      variant: ''
+      parameters:
+        badge:
+          type: text
+          value: ${#jptr:/Product Content results Loop Item/subCategories/0}
+        badgeSize:
+          type: select
+          value: md
+        badgeStyle:
+          type: tp-badge-style-parameter
+          value: accent
+        buttonCopy:
+          type: text
+          value: See Details
+        buttonLink:
+          type: link
+          value:
+            path: /products/:product-slug
+            type: projectMapNode
+            nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+            dynamicInputValues:
+              product-slug: ${#jptr:/Product Content results Loop Item/slug}
+        buttonStyle:
+          type: tp-button-style-parameter
+          value: primary
+        textColorVariant:
+          type: select
+          value: Dark
+        lineCountRestriction:
+          type: tp-slider-parameter
+          value: '5'
+    e0a70c29-840b-4a52-9657-0ac9c6338f2f|98ef4404-7adc-4d1b-bd62-e17bc229352b:
+      parameters:
+        slug:
+          type: text
+          value: null
+        badge:
+          type: text
+          value: ${#jptr:/Product Content results Loop Item/subCategories/0}
+        badgeSize:
+          type: select
+          value: md
+        badgeStyle:
+          type: tp-badge-style-parameter
+          value: accent
+        buttonCopy:
+          type: text
+          value: See Details
+        buttonLink:
+          type: link
+          value:
+            path: /products/:product-slug
+            type: projectMapNode
+            nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+            dynamicInputValues:
+              product-slug: ${#jptr:/Product Content results Loop Item/slug}
+        buttonStyle:
+          type: tp-button-style-parameter
+          value: secondary
+        textColorVariant:
+          type: select
+          value: Light
+        lineCountRestriction:
+          type: tp-slider-parameter
+          value: '5'
+created: '2023-12-12T14:49:47.204744+00:00'
+modified: '2023-12-13T09:22:43.930511+00:00'
+pattern: false

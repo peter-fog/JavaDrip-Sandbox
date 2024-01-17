@@ -1,0 +1,69 @@
+created: '2023-10-19T11:46:41.981101+00:00'
+modified: '2023-12-15T08:14:11.363877+00:00'
+pattern: false
+entry:
+  _id: da0132f9-6058-459c-b01a-02d41bd15858
+  _name: Love It!
+  _slug: love-it
+  type: testimonial
+  fields:
+    stars:
+      type: text
+      value: '5'
+    title:
+      type: text
+      value: Love It!
+    picture:
+      type: asset
+      value:
+        - _id: 5109bf24-29c2-487e-98ba-f7ff04c3024d
+          type: image
+          fields:
+            id:
+              type: text
+              value: 32804ab1-5027-4290-9cbb-ac3dcd277273
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/7rf9opLfTQaobbeiktrMjA-in_bed_lukrep.jpg
+              type: text
+            file:
+              type: file
+              value: 673b174f-5a18-47ef-98e7-d52a87a7a0ea
+            size:
+              value: 1516696
+              type: number
+            title:
+              type: text
+              value: in_bed_lukrep.jpg
+            width:
+              value: 2008
+              type: number
+            height:
+              value: 3072
+              type: number
+            mediaType:
+              value: image/jpeg
+              type: text
+          _source: uniform-assets
+    firstName:
+      type: text
+      value: Kayla
+    productId:
+      type: text
+      value: javadrip-specialty-coffee-maker
+    experience:
+      type: text
+      value: >-
+        We purchased the JavaDrip Speciality coffee maker with the fold-away
+        frother I'm a fan of making my own coffee at home (have used Bunn &
+        multiple Keuirg models). After going back & forth on if I wanted to get
+        it, I figured I definitely should give it a try. And I'm so glad I did!
+
+
+        I love the selection of brew styles & sizes, the short time it takes to
+        brew all sizes from normal cup to full pot/carafe! And the fold-away
+        frother is a nice touch along with the included smart cup that has
+        serving suggestions for each size on how many scoops to add. Which is
+        nice for our daughter that is in high-school, she can easily make her
+        coffee in the mornings to take to school with her without worrying if
+        she's using too much or little. I would recommend it!

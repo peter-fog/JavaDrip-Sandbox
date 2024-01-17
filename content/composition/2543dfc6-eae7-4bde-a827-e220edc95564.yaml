@@ -1,0 +1,72 @@
+composition:
+  _name: Article Details Page
+  _id: 2543dfc6-eae7-4bde-a827-e220edc95564
+  _slug: ':article-slug'
+  type: articleDetailsPage
+  parameters:
+    pageTitle:
+      type: text
+      value: ${#jptr:/Article by Slug Content/entries/0/title} Details Page
+  slots:
+    pageFooter:
+      - _id: 7b129795-9682-4775-9f3d-149031c1d3bc
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: ca488f07-b853-4822-a832-f3018d1d5f67
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: f5ca6fcb-85a8-4fa0-a649-a0405f5839a4
+        type: spacer
+        parameters:
+          thickness:
+            type: tp-slider-parameter
+            value: 10px
+      - _id: 5b1416a4-5b93-4b11-8599-6eadc4de8c24
+        type: breadcrumbs
+        parameters:
+          title:
+            type: text
+            value: Article Details Page
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: 9b93d468-c69d-4f3c-9491-9f271ca153e2
+        type: box
+        _pattern: d820b9b2-ab92-400c-b32a-dd6302202275
+        _dataResources:
+          Article by Slug Content:
+            type: contentstackArticleBySlug
+            variables:
+              query: '{ "slug": "${article-slug}" }'
+              locale: ''
+              include: ''
+              entriesValue: ${article-slug}
+              contentTypeUid: article
+  _dataResources:
+    Article by Slug Content:
+      type: contentstackArticleBySlug
+      variables:
+        query: '{ "slug": "${article-slug}" }'
+        locale: ''
+        entriesValue: ${article-slug}
+        contentTypeUid: article
+  _overrides:
+    ca488f07-b853-4822-a832-f3018d1d5f67:
+      parameters:
+        syntheticGap:
+          type: tp-slider-parameter
+          value: Small
+created: '2023-12-12T20:34:09.427793+00:00'
+modified: '2023-12-12T20:34:09.427793+00:00'
+pattern: false

@@ -1,0 +1,52 @@
+created: '2023-10-19T11:46:33.603785+00:00'
+modified: '2023-12-15T08:13:47.190467+00:00'
+pattern: false
+entry:
+  _id: 575ef3fd-b226-4eaa-bbec-20df30742651
+  _name: Four user profiles for full taste customization
+  _slug: four-user-profiles-for-full-taste-customization
+  type: productFeature
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 0330476e-8ffa-4ce9-9c6a-fb2f2e848c34
+          type: image
+          fields:
+            id:
+              type: text
+              value: b8baf1d2-9f1e-47cd-be64-df16ac8cbf9d
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/NshHSuUeTAuh_KPPQbXnGg-smart_feature_2.webp
+              type: text
+            file:
+              type: file
+              value: 47d04de5-cf37-4d95-881e-6c61f7cfde5f
+            size:
+              value: 46628
+              type: number
+            title:
+              type: text
+              value: smart_feature_2.webp
+            width:
+              value: 1224
+              type: number
+            height:
+              value: 872
+              type: number
+            mediaType:
+              value: image/webp
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Four user profiles for full taste customization
+    description:
+      type: text
+      value: >-
+        You may love your family more than anything, but that doesn’t mean you
+        love your coffee the same way. The Cervello di Caffè stores up to four
+        taste profiles, which are applied automatically when you use your app or
+        voice assistant to start the brewing process or can be set manually on
+        the machine.

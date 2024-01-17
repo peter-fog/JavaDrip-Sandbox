@@ -1,0 +1,55 @@
+created: '2023-10-19T11:46:34.820749+00:00'
+modified: '2023-12-15T08:13:49.612434+00:00'
+pattern: false
+entry:
+  _id: 6320b5ed-6166-433c-a2f0-274891bb2bcb
+  _name: Thermal Flavor Extractor
+  _slug: thermal-flavor-extractor
+  type: productFeature
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 478f3581-246a-46f4-9846-5362d60a61a3
+          type: image
+          fields:
+            id:
+              type: text
+              value: ba050007-1af7-4945-b415-0f6da66a987b
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/fW64ttnUTaOoAbIYIqKVFQ-javaDrip_specialty_flavor_extractor.jpg
+              type: text
+            file:
+              type: file
+              value: 41bdab29-4e85-46ba-a2ec-990416802893
+            size:
+              value: 447567
+              type: number
+            title:
+              type: text
+              value: javaDrip_specialty_flavor_extractor.jpg
+            width:
+              value: 2000
+              type: number
+            height:
+              value: 2000
+              type: number
+            mediaType:
+              value: image/jpeg
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Thermal Flavor Extractor
+    productId:
+      type: text
+      value: javadrip-specialty-coffee-maker
+    description:
+      type: text
+      value: >-
+        Automatically controls the variables for making the perfect cup.
+        Temperature: Water is heated to the ideal temperature for coffee.
+        Pre-Infusion: Grounds are evenly saturated then given time to 'bloom'
+        Saturation: Grounds are saturated again for an even and consistent
+        extraction

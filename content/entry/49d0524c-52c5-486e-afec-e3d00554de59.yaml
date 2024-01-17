@@ -1,0 +1,50 @@
+created: '2023-10-19T11:46:32.456805+00:00'
+modified: '2023-12-15T08:13:42.734371+00:00'
+pattern: false
+entry:
+  _id: 49d0524c-52c5-486e-afec-e3d00554de59
+  _name: Where future technologies meet timeless taste
+  _slug: where-future-technologies-meet-timeless-taste
+  type: hero
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 4112195e-a668-410a-afdc-3275c307b308
+          type: image
+          fields:
+            id:
+              type: text
+              value: 1240d461-04ed-4a53-8958-5c471d4e0b51
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/M7MinnWlRUmVeGTuXXRrhg-hero_alt_5.png
+              type: text
+            file:
+              type: file
+              value: 3dab257c-f617-4105-8ff9-c4d54f0d0b54
+            size:
+              value: 5638561
+              type: number
+            title:
+              type: text
+              value: hero_alt_5.png
+            width:
+              value: 3206
+              type: number
+            height:
+              value: 1802
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Where future technologies meet timeless taste
+    description:
+      type: text
+      value: >-
+        When we speak of the 'perfect coffee bean', it's more than just a
+        catchphrase. To us, it embodies a journey of passion, precision, and
+        perseverance.

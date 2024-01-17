@@ -1,0 +1,346 @@
+composition:
+  _name: Default reviews
+  _id: e244a7a9-309a-4fbf-ab85-c4c2eb4cf75e
+  type: grid
+  parameters:
+    gapX:
+      type: tp-slider-parameter
+      value: none
+    gapY:
+      type: tp-slider-parameter
+      value: none
+    title:
+      type: text
+      value: Default reviews
+    marginTop:
+      type: select
+      value: None
+    paddingTop:
+      type: select
+      value: None
+    columnsCount:
+      type: tp-slider-parameter
+      value: '8'
+    marginBottom:
+      type: select
+      value: None
+    paddingBottom:
+      type: select
+      value: None
+  slots:
+    grid-inner:
+      - _id: ecfe5ada-3231-4564-a7c3-0ab4491c4b76
+        type: gridItem
+        slots:
+          inner:
+            - _id: 56d4dcc9-df34-4c46-9489-74f3a80cf930
+              type: grid
+              slots:
+                grid-inner:
+                  - _id: 8b7126f0-a066-4f52-b7cd-dcb6ba93a0a0
+                    type: review
+                    parameters:
+                      date:
+                        type: text
+                        value: July 12, 2021
+                      stars:
+                        type: tp-slider-parameter
+                        value: '5'
+                      title:
+                        type: text
+                        value: Can't say enough good things
+                      picture:
+                        type: asset
+                        value:
+                          - _id: 81e50d90-a133-4883-85b9-8a070ecf780a
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: 12d37c68-42e4-4694-b221-d4754482a666
+                              url:
+                                value: >-
+                                  https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/7NhgSLY2Qq-KmudgtBUa8Q-person_photo_1.jpg
+                                type: text
+                              file:
+                                type: file
+                                value: 435c1360-a258-4602-90cd-0e61d03ca683
+                              size:
+                                value: 8294
+                                type: number
+                              title:
+                                type: text
+                                value: person_photo_1.jpg
+                              width:
+                                value: 256
+                                type: number
+                              height:
+                                value: 256
+                                type: number
+                              mediaType:
+                                value: image/jpeg
+                                type: text
+                            _source: uniform-assets
+                      personName:
+                        type: text
+                        value: Hector Gibbons
+                      starsColor:
+                        type: tp-color-style-parameter
+                        value: primary
+                      description:
+                        type: text
+                        value: >-
+                          Blown away by how polished this icon pack is.
+                          Everything looks so consistent and each SVG is
+                          optimized out of the box so I can use it directly with
+                          confidence. It would take me several hours to create a
+                          single icon this good, so it's a steal at this price.
+                      textColorVariant:
+                        type: select
+                        value: Dark
+                      lineCountRestriction:
+                        type: tp-slider-parameter
+                        value: none
+                    _overridability:
+                      variants: true
+                      parameters:
+                        date: 'yes'
+                        stars: 'yes'
+                        title: 'yes'
+                        picture: 'yes'
+                        personName: 'yes'
+                        starsColor: 'yes'
+                        description: 'yes'
+                        showReviewLabel: 'yes'
+                        textColorVariant: 'yes'
+                        lineCountRestriction: 'yes'
+                  - _id: 07d97a02-73cd-4e62-89cf-ceea22e12986
+                    type: review
+                    parameters:
+                      date:
+                        type: text
+                        value: July 12, 2021
+                      stars:
+                        type: tp-slider-parameter
+                        value: '4'
+                      title:
+                        type: text
+                        value: The last shirts I may ever need
+                      picture:
+                        type: asset
+                        value:
+                          - _id: 47b775f0-8e34-4364-9c62-bd2dba1469e6
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: f0d14b90-22fc-4f68-896c-847bc3cc7c4f
+                              url:
+                                value: >-
+                                  https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/EZzEgV0NQS2g9qGhXVZ02g-person_photo_2.jpg
+                                type: text
+                              file:
+                                type: file
+                                value: 87d04ecd-89cd-483f-b063-47994cd85e32
+                              size:
+                                value: 18613
+                                type: number
+                              title:
+                                type: text
+                                value: person_photo_2.jpg
+                              width:
+                                value: 256
+                                type: number
+                              height:
+                                value: 256
+                                type: number
+                              mediaType:
+                                value: image/jpeg
+                                type: text
+                            _source: uniform-assets
+                      personName:
+                        type: text
+                        value: Emily Selman
+                      description:
+                        type: text
+                        value: >-
+                          This icon pack is just what I need for my latest
+                          project. There's an icon for just about anything I
+                          could ever need. Love the playful look!
+                      textColorVariant:
+                        type: select
+                        value: Dark
+                      lineCountRestriction:
+                        type: tp-slider-parameter
+                        value: none
+                    _overridability:
+                      variants: true
+                      parameters:
+                        date: 'yes'
+                        stars: 'yes'
+                        title: 'yes'
+                        picture: 'yes'
+                        personName: 'yes'
+                        starsColor: 'yes'
+                        description: 'yes'
+                        showReviewLabel: 'yes'
+                        textColorVariant: 'yes'
+                        lineCountRestriction: 'yes'
+                  - _id: 759bd889-07a5-4999-8513-e2f6fb6f9c13
+                    type: review
+                    parameters:
+                      date:
+                        type: text
+                        value: July 12, 2021
+                      stars:
+                        type: tp-slider-parameter
+                        value: '5'
+                      title:
+                        type: text
+                        value: Very comfy and looks the part
+                      picture:
+                        type: asset
+                        value:
+                          - _id: f5e71803-2159-4b98-94c3-1b36daaf8628
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: f83d1a5a-721d-40c3-bfab-a2dacf57bbd2
+                              url:
+                                value: >-
+                                  https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/KT25pVnqQs6rB9iD4UviwQ-person_photo_3.jpg
+                                type: text
+                              file:
+                                type: file
+                                value: 813402b1-1b0e-4f5f-8fd7-93404a7e75d1
+                              size:
+                                value: 5865
+                                type: number
+                              title:
+                                type: text
+                                value: person_photo_3.jpg
+                              width:
+                                value: 256
+                                type: number
+                              height:
+                                value: 256
+                                type: number
+                              mediaType:
+                                value: image/jpeg
+                                type: text
+                            _source: uniform-assets
+                      personName:
+                        type: text
+                        value: Laura G
+                      starsColor:
+                        type: tp-color-style-parameter
+                        value: accent
+                      description:
+                        type: text
+                        value: >-
+                          I bought two of those comfy cotton shirts, and let me
+                          tell you: they're amazing! I have been wearing them
+                          almost every day. Even after a dozen of washes, that
+                          still looks and feel good as new. Will definitely
+                          order a few more... If I ever need to!
+                      showReviewLabel:
+                        type: checkbox
+                        value: true
+                      textColorVariant:
+                        type: select
+                        value: Dark
+                      lineCountRestriction:
+                        type: tp-slider-parameter
+                        value: none
+                    _overridability:
+                      variants: true
+                      parameters:
+                        date: 'yes'
+                        stars: 'yes'
+                        title: 'yes'
+                        picture: 'yes'
+                        personName: 'yes'
+                        starsColor: 'yes'
+                        description: 'yes'
+                        showReviewLabel: 'yes'
+                        textColorVariant: 'yes'
+                        lineCountRestriction: 'yes'
+              parameters:
+                gapX:
+                  type: tp-slider-parameter
+                  value: none
+                gapY:
+                  type: tp-slider-parameter
+                  value: medium
+                title:
+                  type: text
+                  value: Column Grid
+                marginTop:
+                  type: select
+                  value: None
+                paddingTop:
+                  type: select
+                  value: None
+                columnsCount:
+                  type: tp-slider-parameter
+                  value: '1'
+                marginBottom:
+                  type: select
+                  value: None
+                paddingBottom:
+                  type: select
+                  value: None
+              _overridability:
+                parameters:
+                  gapX: 'yes'
+                  gapY: 'yes'
+                  title: 'yes'
+                  marginTop: 'yes'
+                  paddingTop: 'yes'
+                  columnsCount: 'yes'
+                  marginBottom: 'yes'
+                  paddingBottom: 'yes'
+                  backgroundType: 'yes'
+                  containerVariant: 'yes'
+        parameters:
+          title:
+            type: text
+            value: Grouped Section
+          rowSpan:
+            type: tp-slider-parameter
+            value: '1'
+          rowStart:
+            type: tp-slider-parameter
+            value: None
+          columnSpan:
+            type: tp-slider-parameter
+            value: '6'
+          columnStart:
+            type: tp-slider-parameter
+            value: '2'
+        _overridability:
+          parameters:
+            title: 'yes'
+            rowSpan: 'yes'
+            rowStart: 'yes'
+            columnSpan: 'yes'
+            columnStart: 'yes'
+  _overridability:
+    parameters:
+      gapX: 'yes'
+      gapY: 'yes'
+      title: 'yes'
+      marginTop: 'yes'
+      paddingTop: 'yes'
+      columnsCount: 'yes'
+      marginBottom: 'yes'
+      paddingBottom: 'yes'
+      backgroundType: 'yes'
+      containerVariant: 'yes'
+created: '2023-09-28T09:23:31.720653+00:00'
+modified: '2023-12-12T16:06:01.990989+00:00'
+pattern: true
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/NewJavaDripTheme/Review_default_pattern_preview_image
+categoryId: 2da8c924-14d5-470b-9fe4-1e56521551e5

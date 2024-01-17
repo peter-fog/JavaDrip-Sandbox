@@ -1,0 +1,47 @@
+created: '2023-10-19T11:46:36.461957+00:00'
+modified: '2023-12-15T08:13:55.413869+00:00'
+pattern: false
+entry:
+  _id: 831d9ac2-49d0-4a5c-b5ac-214a683fae19
+  _name: It's cold and snowing
+  _slug: its-cold-and-snowing
+  type: hero
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: ac54d93a-9ac0-4def-9e26-b179f41841d9
+          type: image
+          fields:
+            id:
+              type: text
+              value: ae0ac07f-ba2c-4c3a-b241-de9768c70988
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/lb4LWNaXR42S-kS4owcYbg-photo_15.png
+              type: text
+            file:
+              type: file
+              value: 1c374d06-b743-4652-9470-c7fbfa9ed6d6
+            size:
+              value: 2202324
+              type: number
+            title:
+              type: text
+              value: photo_15.png
+            width:
+              value: 2070
+              type: number
+            height:
+              value: 1380
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: It's cold and snowing
+    description:
+      type: text
+      value: Break out the percolator!

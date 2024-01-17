@@ -1,0 +1,53 @@
+created: '2023-10-19T11:46:35.506372+00:00'
+modified: '2023-12-15T08:13:52.62974+00:00'
+pattern: false
+entry:
+  _id: 6b02d6a0-e4bf-483e-82ef-08083fd97ddb
+  _name: AI-optimized grinding and delivery ensures that every...
+  _slug: ai-optimized-grinding-and-delivery-ensures-that-every
+  type: featuredCallout
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 4d6025eb-026d-4914-88ff-342749658822
+          type: image
+          fields:
+            id:
+              type: text
+              value: 89f90f60-cf6f-4fca-8203-9c586c596213
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/v3DdiD4FSZaZbDU4A6fInA-smart_feature_1.webp
+              type: text
+            file:
+              type: file
+              value: 2312b67c-fb55-4b5c-930b-2eacf4b7ba56
+            size:
+              value: 87228
+              type: number
+            title:
+              type: text
+              value: smart_feature_1.webp
+            width:
+              value: 1224
+              type: number
+            height:
+              value: 872
+              type: number
+            mediaType:
+              value: image/webp
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: >-
+        AI-optimized grinding and delivery ensures that every coffee is just how
+        you like it
+    description:
+      type: text
+      value: >-
+        Not everyone has decades of experience selecting, roasting and grinding
+        coffee - but that doesn’t mean they don’t deserve a perfect espresso
+        every time. That’s why we’ve worked with the industry’s top experts to
+        create an AI system that gives you the coffee you deserve.

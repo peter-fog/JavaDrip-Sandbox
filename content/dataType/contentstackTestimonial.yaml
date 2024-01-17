@@ -1,0 +1,43 @@
+id: contentstackTestimonial
+displayName: Testimonial
+ttl: 30
+path: /content_types/${content_type_uid}/entries/${entry_uid}?${include}
+custom:
+  include: 2
+  imagePath: picture
+  searchFieldIds:
+    - title
+  allowContentTypeUids:
+    - testimonial
+  enableFilterByLocale: false
+method: GET
+purgeKey: 30b19cd5-8646-4599-b1e7-5a547426a99f
+archetype: singleEntry
+variables:
+  query:
+    type: text
+    default: '{ "uid": { "$in": [ "" ] } }'
+    displayName: Query
+  locale:
+    type: text
+    default: ''
+    displayName: Locale
+  include:
+    type: text
+    default: ''
+    displayName: Include
+  entry_uid:
+    type: text
+    default: ''
+    displayName: Entry Uid
+  content_type_uid:
+    type: text
+    default: testimonial
+    displayName: Entry Type
+parameters:
+  - key: query
+    value: ${query}
+  - key: locale
+    value: ${locale}
+dataSourceId: contentstackDataSource
+allowedOnComponents: []

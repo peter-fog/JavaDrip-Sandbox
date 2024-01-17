@@ -1,0 +1,109 @@
+composition:
+  _name: Hero - Product (cs)
+  _id: 9d951498-b18d-4126-9b29-ded946bc6167
+  type: hero
+  variant: imageLeft
+  parameters:
+    image:
+      type: asset
+      value:
+        - _id: 06bec7db-638c-4d55-9df5-ce830bc18fd4
+          type: image
+          fields:
+            url:
+              type: text
+              value: ${#jptr:/Product Feature Content/entry/image}
+          _source: custom-url
+    title:
+      type: text
+      value: ${#jptr:/Product Feature Content/entry/title}
+    marginTop:
+      type: select
+      value: None
+    paddingTop:
+      type: select
+      value: None
+    titleStyle:
+      type: tp-title-style-parameter
+      value: h2
+    description:
+      type: text
+      value: ${#jptr:/Product Feature Content/entry/description}
+    marginBottom:
+      type: select
+      value: None
+    paddingBottom:
+      type: select
+      value: None
+    backgroundType:
+      type: tp-background-type-parameter
+      value: Dark
+    textColorVariant:
+      type: select
+      value: Light
+    primaryButtonCopy:
+      type: text
+      value: Learn More
+    primaryButtonLink:
+      type: link
+      value:
+        path: /products/${#jptr:/Product Feature Content/entry/product_id}
+        type: projectMapNode
+        nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+        projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+        dynamicInputValues:
+          product-slug: ${#jptr:/Product Feature Content/entry/product_id}
+    primaryButtonStyle:
+      type: tp-button-style-parameter
+      value: secondary
+  _dataResources:
+    Product Feature Content:
+      type: contentstackProductFeature
+      variables:
+        query: ''
+        locale: ''
+        include: ''
+        entry_uid: blt135e96547c1e4ca2
+        content_type_uid: product_feature
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    variants: true
+    parameters:
+      delay: 'yes'
+      image: 'yes'
+      title: 'yes'
+      video: 'yes'
+      duration: 'yes'
+      marginTop: 'yes'
+      objectFit: 'yes'
+      fullHeight: 'yes'
+      paddingTop: 'yes'
+      titleStyle: 'yes'
+      description: 'yes'
+      eyebrowText: 'yes'
+      marginBottom: 'yes'
+      overlayColor: 'yes'
+      animationType: 'yes'
+      paddingBottom: 'yes'
+      animationOrder: 'yes'
+      backgroundType: 'yes'
+      overlayOpacity: 'yes'
+      animationPreview: 'yes'
+      containerVariant: 'yes'
+      textColorVariant: 'yes'
+      primaryButtonCopy: 'yes'
+      primaryButtonLink: 'yes'
+      primaryButtonStyle: 'yes'
+      secondaryButtonCopy: 'yes'
+      secondaryButtonLink: 'yes'
+      secondaryButtonStyle: 'yes'
+      primaryButtonAnimationType: 'yes'
+      secondaryButtonAnimationType: 'yes'
+created: '2023-12-12T14:49:37.44415+00:00'
+modified: '2023-12-12T14:49:37.44415+00:00'
+pattern: true
+description: Product information in a hero layout
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/NewJavaDripTheme/SalesDemo/Patterns/Hero_product_preview_image
+categoryId: 2da8c924-14d5-470b-9fe4-1e56521551e5

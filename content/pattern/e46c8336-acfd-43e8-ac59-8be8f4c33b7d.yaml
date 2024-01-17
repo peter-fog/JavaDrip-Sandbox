@@ -1,0 +1,188 @@
+composition:
+  _name: Main Header
+  _id: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+  type: header
+  parameters:
+    logo:
+      type: asset
+      value:
+        - _id: 784562d8-4e01-4fe1-a140-6ec89234bb1d
+          type: image
+          fields:
+            id:
+              type: text
+              value: 3cb246e3-d617-48eb-84bf-0cd77fa4d1f9
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/srIJAs-bRdyBVffWZdtquA-jd_commerce_logo.svg
+              type: text
+            file:
+              type: file
+              value: b8ccc399-5bc3-4057-a27e-e57d1dea2b08
+            size:
+              value: 5214
+              type: number
+            title:
+              type: text
+              value: jd_commerce_logo.svg
+            width:
+              value: 408
+              type: number
+            height:
+              value: 65
+              type: number
+            mediaType:
+              value: image/svg+xml
+              type: text
+          _source: uniform-assets
+    theme:
+      type: tp-set-up-theme-parameter
+      value:
+        colors:
+          - name: primary
+            label: Primary
+            value: '#000000'
+          - name: primary-content
+            label: Primary Content
+            value: '#FFFFFF'
+          - name: secondary
+            label: Secondary
+            value: '#F7DF1E'
+          - name: secondary-content
+            label: Secondary Content
+            value: '#000000'
+          - name: accent
+            label: Accent
+            value: '#F8E399'
+          - name: accent-content
+            label: Accent Content
+            value: '#000000'
+          - name: info-content
+            label: Info Content
+            value: '#E4E4E4'
+          - name: base-200
+            label: Base 200
+            value: '#b69066'
+          - name: base-300
+            label: Base 300
+            value: '#000000'
+        themeName: custom
+        themeLabel: Custom
+    favicon:
+      type: asset
+      value:
+        - _id: 72056a2f-23c3-4c42-96e0-0b56927564ac
+          type: image
+          fields:
+            url:
+              type: text
+              value: >-
+                https://res.cloudinary.com/uniform-demos/image/upload/v1692284346/coffee-icons/JD.ico
+          _source: custom-url
+    primaryFont:
+      type: select
+      value: lexend_giga
+    syntheticGap:
+      type: tp-slider-parameter
+      value: None
+    linksAlignment:
+      type: tp-horizontal-align-parameter
+      value: center
+  slots:
+    links:
+      - _id: 08efc737-c52e-4fa8-b267-b06eb8de0064
+        type: navigationLink
+        variant: header
+        parameters:
+          link:
+            type: link
+            value:
+              path: /coffee-makers
+              type: projectMapNode
+              nodeId: ea684346-109c-4b11-82a5-2a982d2dd795
+              projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+          title:
+            type: text
+            value: MACHINES
+      - _id: b4381722-bde4-42a2-b34f-b5fdd4cc07e2
+        type: navigationLink
+        variant: header
+        parameters:
+          link:
+            type: link
+            value:
+              path: /beans
+              type: projectMapNode
+              nodeId: 159b02be-f6b3-4752-8fc7-9689b67236b2
+              projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+          title:
+            type: text
+            value: OUR BEANS
+      - _id: 863e79bb-74e4-4e95-b099-d39b207ba507
+        type: navigationLink
+        variant: header
+        parameters:
+          link:
+            type: link
+            value:
+              path: /articles
+              type: projectMapNode
+              nodeId: a721ea42-834d-4fb2-84c7-644755bf84f1
+              projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+          title:
+            type: text
+            value: ARTICLES
+      - _id: 83d46b0f-9260-44ac-970d-f5d32d8e7bd6
+        type: navigationLink
+        parameters:
+          link:
+            type: link
+            value:
+              path: /JavaDrip-Specialty-Launch
+              type: projectMapNode
+              nodeId: 1ba42a5b-3aef-4c2a-982f-f28d4ba0fc54
+              projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+          title:
+            type: text
+            value: PROMOTION
+      - _id: 441428c2-9246-49d3-8533-7a89383f617f
+        type: navigationLink
+        parameters:
+          link:
+            type: link
+            value:
+              path: /about-us
+              type: projectMapNode
+              nodeId: 46d79867-b877-4ce7-9675-78fee55fc308
+              projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+          title:
+            type: text
+            value: ABOUT US
+    iconLinks:
+      - _id: ce9daf92-5a9d-4b25-8b4b-f455c5919514
+        type: shoppingCartIcon
+        parameters:
+          link:
+            type: link
+            value:
+              path: /shopping-cart
+              type: projectMapNode
+              nodeId: 410a3500-2543-46bc-a605-055336da0bf4
+              projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+      - _id: 8bcb9491-3b18-4a61-9281-67c55127d723
+        type: profileIcon
+        parameters:
+          link:
+            type: link
+            value:
+              path: /profile
+              type: projectMapNode
+              nodeId: 8a883823-f85d-40f6-9811-0803b2f1dd2b
+              projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+  _overridability:
+    parameters:
+      syntheticGap: 'yes'
+created: '2023-11-15T12:43:20.40185+00:00'
+modified: '2023-12-12T16:14:19.790393+00:00'
+pattern: true
+categoryId: 1bf9504a-07c4-4873-bbca-f235a6da182b

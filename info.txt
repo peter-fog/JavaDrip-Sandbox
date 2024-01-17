@@ -1,0 +1,6 @@
+repo: demo-v-next
+branch: main
+commit: 79d52125ee9be7f6dce18619fd5ccb3d90973db3
+project: sales-demo
+variant: default
+date/time: 1/17/2024, 12:55:08 PM

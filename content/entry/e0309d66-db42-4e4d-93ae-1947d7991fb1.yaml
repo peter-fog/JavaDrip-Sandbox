@@ -1,0 +1,44 @@
+created: '2023-10-19T11:46:42.422625+00:00'
+modified: '2023-12-15T08:14:13.553793+00:00'
+pattern: false
+entry:
+  _id: e0309d66-db42-4e4d-93ae-1947d7991fb1
+  _name: Bluebird Days are for Espresso
+  _slug: bluebird-days-are-for-espresso
+  type: hero
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 4d88f69e-dc8a-499c-b39c-53a11cc5c3ae
+          type: image
+          fields:
+            id:
+              type: text
+              value: 5ec12905-0364-4ae6-b5ee-4bfebd5a487d
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/CL_y6BbVSXCBrZiDaIrRUw-photo-161.png
+              type: text
+            file:
+              type: file
+              value: 6c1a132f-fd73-4df4-957e-4632344d13ff
+            size:
+              value: 3024033
+              type: number
+            title:
+              type: text
+              value: photo-161.png
+            width:
+              value: 1974
+              type: number
+            height:
+              value: 1480
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Bluebird Days are for Espresso

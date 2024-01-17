@@ -1,0 +1,84 @@
+composition:
+  _name: Checkout Success
+  _id: 7225d3ea-05a6-4fd8-bfbf-213bd01003a4
+  _slug: success
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Checkout Success Page
+  slots:
+    pageFooter:
+      - _id: 9c9fef23-c459-49c0-94ae-1c347ec04ad7
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 3e3dbd1e-82f2-48e7-a4a9-328b2b227150
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: c7581107-ab3d-46e1-b064-c1ac1a73e5d3
+        type: hero
+        variant: ''
+        parameters:
+          title:
+            type: text
+            value: Thank you for your order!
+          paddingTop:
+            type: select
+            value: None
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+          description:
+            type: text
+            value: >-
+              Congratulations on your successful purchase! We're delighted to
+              have you as our valued customer. Your order has been processed,
+              and you can expect your items to be on their way to you soon. Keep
+              an eye on your email for a confirmation and tracking information.
+              If you have any questions or need assistance, our customer support
+              team is here to help. We appreciate your business and hope you
+              enjoy your new purchase!
+          eyebrowText:
+            type: text
+            value: Checkout Successful
+          overlayColor:
+            type: tp-color-style-parameter
+            value: base-300
+          paddingBottom:
+            type: select
+            value: None
+          overlayOpacity:
+            type: tp-slider-parameter
+            value: 50%
+          containerVariant:
+            type: select
+            value: fluidContent
+          textColorVariant:
+            type: select
+            value: Dark
+      - _id: 4bc57658-bbb2-445f-b112-7e519e5fdc8d
+        type: cardBlock
+        _pattern: c8b897c9-19ea-4bf8-9794-52b357b9901b
+        _dataResources:
+          Recommend Products Content:
+            type: algoliaRecommendProducts
+            variables:
+              body: >-
+                {"requests":[{"threshold":0,"objectID":"peruvian-blend-coffee-134","model":"related-products","indexName":"products-ngm","queryParameters":{"query":"","facetFilters":[]}}]}
+              path: /*/recommendations
+              query: ''
+              objectID: peruvian-blend-coffee-134
+              threshold: '0'
+              facetValues: ''
+              maxRecommendations: '30'
+  _overrides:
+    4bc57658-bbb2-445f-b112-7e519e5fdc8d:
+      parameters:
+        title:
+          type: text
+          value: Our Top Picks for You
+created: '2023-12-12T14:49:46.61391+00:00'
+modified: '2023-12-12T14:49:46.61391+00:00'
+pattern: false

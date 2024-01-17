@@ -1,0 +1,44 @@
+created: '2023-10-19T11:46:28.283137+00:00'
+modified: '2023-12-15T08:13:31.361939+00:00'
+pattern: false
+entry:
+  _id: 069de6e9-f6c0-4022-afaf-29f3a1fb21cf
+  _name: Buy Coffee Machine
+  _slug: buy-coffee-machine
+  type: hero
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 354bfcf7-bb28-43fb-bb35-e94ae09f5b2c
+          type: image
+          fields:
+            id:
+              type: text
+              value: 4b15db5c-7029-47e1-afd0-984cefaf082a
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/2ZPdWD9VSMKk14EMW4ZbxQ-hero_alt_4.webp
+              type: text
+            file:
+              type: file
+              value: 75072538-4d1e-4909-9bb6-0b9c21b32bb6
+            size:
+              value: 352516
+              type: number
+            title:
+              type: text
+              value: hero_alt_4.webp
+            width:
+              value: 2600
+              type: number
+            height:
+              value: 1300
+              type: number
+            mediaType:
+              value: image/webp
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Buy Coffee Machine

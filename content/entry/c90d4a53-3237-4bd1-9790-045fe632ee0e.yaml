@@ -1,0 +1,47 @@
+created: '2023-10-19T11:46:40.434019+00:00'
+modified: '2023-12-15T08:14:07.123846+00:00'
+pattern: false
+entry:
+  _id: c90d4a53-3237-4bd1-9790-045fe632ee0e
+  _name: Engineering goes better...
+  _slug: engineering-goes-better
+  type: hero
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 22ab0c3d-d7fa-4f2f-a7d6-0bab53c43435
+          type: image
+          fields:
+            id:
+              type: text
+              value: 6ea51630-fcaf-48bc-b06e-53606fd4993f
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/NeTAhe0VSVuMDLABGmhmkA-photo-162.png
+              type: text
+            file:
+              type: file
+              value: db74da01-d6d9-4ffc-ad3b-f0409fece768
+            size:
+              value: 8951223
+              type: number
+            title:
+              type: text
+              value: photo-162.png
+            width:
+              value: 2972
+              type: number
+            height:
+              value: 1978
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Engineering goes better...
+    description:
+      type: text
+      value: with Turkish Coffee

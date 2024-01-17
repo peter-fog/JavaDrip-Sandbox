@@ -1,0 +1,117 @@
+composition:
+  _name: Custom Article Details Page
+  _id: bc46114d-dc0f-4779-ab9d-24431255f1bd
+  _slug: how-to-brew-a-proper-cuppa
+  type: articleDetailsPage
+  parameters:
+    pageTitle:
+      type: text
+      value: ${#jptr:/Article by Slug Content/entries/0/title} Details Page
+  slots:
+    pageFooter:
+      - _id: 618d19ac-b421-4877-8ee4-fdf7ca3d8ee8
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 50c654ca-6184-49b0-b5dd-e1a8b7fb2a51
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: 973d0810-fa5c-4a92-a9ca-f3575a96533f
+        type: hero
+        _pattern: 72020706-b903-4dee-a80c-1357bfe25b9e
+        _dataResources:
+          Hero Content:
+            type: contentstackHero
+            variables:
+              query: ''
+              locale: ''
+              entry_uid: blt0443451b1f5b9d75
+              content_type_uid: content_block
+      - _id: f9a29ea9-322f-40ba-b913-13e224fbd24e
+        type: breadcrumbs
+        parameters:
+          title:
+            type: text
+            value: Article Details Page
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: 76ecb4a8-229c-482a-873e-7c577279c462
+        type: box
+        _pattern: d820b9b2-ab92-400c-b32a-dd6302202275
+        _dataResources:
+          Article by Slug Content:
+            type: contentstackArticleBySlug
+            variables:
+              query: '{ "slug": "how-to-brew-a-proper-cuppa" }'
+              locale: ''
+              include: ''
+              entriesValue: how-to-brew-a-proper-cuppa
+              contentTypeUid: article
+  _dataResources:
+    Article by Slug Content:
+      type: contentstackArticleBySlug
+      variables:
+        query: '{ "slug": "how-to-brew-a-proper-cuppa" }'
+        locale: ''
+        entriesValue: how-to-brew-a-proper-cuppa
+        contentTypeUid: article
+  _overrides:
+    50c654ca-6184-49b0-b5dd-e1a8b7fb2a51:
+      parameters:
+        syntheticGap:
+          type: tp-slider-parameter
+          value: Small
+    973d0810-fa5c-4a92-a9ca-f3575a96533f:
+      variant: backgroundImage
+      parameters:
+        image:
+          type: asset
+          value:
+            - _id: c8032e4a-ae05-402e-a890-beaf373f7208
+              type: image
+              fields:
+                url:
+                  type: text
+                  value: ${#jptr:/Article by Slug Content/entries/0/thumbnail/url}
+              _source: custom-url
+        title:
+          type: text
+          value: ${#jptr:/Article by Slug Content/entries/0/title}
+        objectFit:
+          type: select
+          value: cover
+        paddingTop:
+          type: select
+          value: None
+        description:
+          type: text
+          value: This is a custom article page
+        overlayColor:
+          type: tp-color-style-parameter
+          value: base-300
+        paddingBottom:
+          type: select
+          value: None
+        overlayOpacity:
+          type: tp-slider-parameter
+          value: 50%
+        containerVariant:
+          type: select
+          value: fluidContent
+        textColorVariant:
+          type: select
+          value: Light
+created: '2023-12-12T20:34:12.105517+00:00'
+modified: '2023-12-12T20:34:12.105517+00:00'
+pattern: false

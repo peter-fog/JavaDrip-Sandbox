@@ -1,0 +1,53 @@
+created: '2023-10-19T11:46:34.986746+00:00'
+modified: '2023-12-15T08:13:51.348497+00:00'
+pattern: false
+entry:
+  _id: 6913f859-b7ff-497d-b50b-3994e6ebae5d
+  _name: Quantum heating technology
+  _slug: quantum-heating-technology
+  type: productFeature
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 02a192e3-80c3-4a02-a3c4-aaabfeb8c6c6
+          type: image
+          fields:
+            id:
+              type: text
+              value: 4b3b4e1a-4e40-4ecb-9598-775a14ab5247
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/v8ub3Xs7SN-xEsiHB9A9mw-cup.svg
+              type: text
+            file:
+              type: file
+              value: 925e6f14-91d2-47f0-96f8-fdda58948125
+            size:
+              value: 1213
+              type: number
+            title:
+              type: text
+              value: cup.svg
+            width:
+              value: 60
+              type: number
+            height:
+              value: 47
+              type: number
+            mediaType:
+              value: image/svg+xml
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Quantum heating technology
+    productId:
+      type: text
+      value: espresso-gpt-145
+    description:
+      type: text
+      value: >
+        Say goodbye to waiting. The EspressoGPT harnesses quantum mechanics to
+        heat your water in a fraction of a second, ensuring the perfect
+        temperature for your espresso every time.

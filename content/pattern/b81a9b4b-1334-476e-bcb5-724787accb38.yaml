@@ -1,0 +1,104 @@
+composition:
+  _name: Testimonial Hero (ka-al)
+  _id: b81a9b4b-1334-476e-bcb5-724787accb38
+  type: hero
+  variant: imageLeft
+  parameters:
+    image:
+      type: asset
+      value:
+        - _id: 2a6c89bc-06ee-42ff-8834-51beae807d0c
+          type: image
+          fields:
+            url:
+              type: text
+              value: ${#jptr:/Product Content/results/0/thumbnailImage}
+          _source: custom-url
+    title:
+      type: text
+      value: ${#jptr:/Testimonial Content/items/0/elements/title/value}
+    titleStyle:
+      type: tp-title-style-parameter
+      value: h1
+    description:
+      type: text
+      value: ${#jptr:/Testimonial Content/items/0/elements/experience/value}
+    eyebrowText:
+      type: text
+      value: ''
+    primaryButtonCopy:
+      type: text
+      value: Learn more
+    primaryButtonLink:
+      type: link
+      value:
+        path: /products/${#jptr:/Product Content/results/0/slug}
+        type: projectMapNode
+        nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+        projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+        dynamicInputValues:
+          product-slug: ${#jptr:/Product Content/results/0/slug}
+  _dataResources:
+    Product Content:
+      type: algoliaProduct
+      variables:
+        body: >-
+          {"requests":[{"indexName":"products-ngm","objectID":"royale-iq-espresso-machine-117"}]}
+        entryIds: royale-iq-espresso-machine-117
+        facetValue: ''
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+    Testimonial Content:
+      type: kontentAiTestimonial
+      variables:
+        limit: '1'
+        order: ''
+        keyword: ''
+        language: ''
+        sortOrder: asc
+        contentType: testimonial
+        sortElement: ''
+        languageQuery: ''
+        searchByQuery: ''
+        contentTypeQuery: '&system.type[eq]=testimonial'
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    variants: true
+    parameters:
+      delay: 'yes'
+      image: 'yes'
+      title: 'yes'
+      video: 'yes'
+      duration: 'yes'
+      marginTop: 'yes'
+      objectFit: 'yes'
+      fullHeight: 'yes'
+      paddingTop: 'yes'
+      titleStyle: 'yes'
+      description: 'yes'
+      eyebrowText: 'yes'
+      marginBottom: 'yes'
+      overlayColor: 'yes'
+      animationType: 'yes'
+      paddingBottom: 'yes'
+      animationOrder: 'yes'
+      backgroundType: 'yes'
+      overlayOpacity: 'yes'
+      animationPreview: 'yes'
+      containerVariant: 'yes'
+      textColorVariant: 'yes'
+      primaryButtonCopy: 'yes'
+      primaryButtonLink: 'yes'
+      primaryButtonStyle: 'yes'
+      secondaryButtonCopy: 'yes'
+      secondaryButtonLink: 'yes'
+      secondaryButtonStyle: 'yes'
+      primaryButtonAnimationType: 'yes'
+      secondaryButtonAnimationType: 'yes'
+created: '2023-12-12T14:49:38.41164+00:00'
+modified: '2023-12-12T14:49:38.41164+00:00'
+pattern: true
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/NewJavaDripTheme/SalesDemo/Patterns/Hero_testimonial_preview_image
+categoryId: ea001653-1f96-4f07-9187-a1626a4965e5

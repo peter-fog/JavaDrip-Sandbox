@@ -1,0 +1,54 @@
+created: '2023-10-19T11:46:31.6017+00:00'
+modified: '2023-12-15T08:13:40.492597+00:00'
+pattern: false
+entry:
+  _id: 4561803f-48d9-4398-a4c8-199dcb41f319
+  _name: Cervello di Caffè
+  _slug: cervello-di-caffe
+  type: featuredCallout
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: a6cfbf3a-9836-41ed-810b-066f3ef02d51
+          type: image
+          fields:
+            id:
+              type: text
+              value: 7d2cff7c-d75a-4450-8100-211c6e9c6d3f
+            url:
+              value: >-
+                https://canary-img.uniform.global/p/dwsfSKzGTaunBLyd20SnWA/3yNo4u4kSJWntbogOmfkug-featured_callout.png
+              type: text
+            file:
+              type: file
+              value: 00098adc-7d44-4b0f-8f2a-0bbfb6053078
+            size:
+              value: 512797
+              type: number
+            title:
+              type: text
+              value: featured_callout.png
+            width:
+              value: 2000
+              type: number
+            height:
+              value: 2000
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Cervello di Caffè
+    description:
+      type: text
+      value: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.

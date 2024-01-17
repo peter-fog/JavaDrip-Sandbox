@@ -1,0 +1,52 @@
+composition:
+  _name: JavaDrip Specialty Launch
+  _id: a4a859ae-e343-4de7-9f2e-0f1e2a0e5b2b
+  _slug: JavaDrip-Specialty-Launch
+  type: landingPage
+  parameters:
+    pageTitle:
+      type: text
+      value: Landing Page
+  slots:
+    pageFooter:
+      - _id: f19126a8-1577-4319-9792-69f3fc080ef4
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: fd4da54f-6a75-4861-9c34-ce3d6bd9f6d3
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: e2fbbf0a-9c1c-4e4f-a9ba-8f57f209b330
+        type: hero
+        _pattern: b3d6043e-0fd2-4ca1-bc7f-43642e7ede28
+        _dataResources:
+          Hero Content:
+            type: hero
+            variables:
+              entryId: b8d75c9a-4e2a-4c52-a46b-b7842e9d98a8
+      - _id: 11fe14a6-0bcd-4211-a3ae-62303b2df290
+        type: $personalization
+        slots:
+          pz:
+            - _id: 685256be-af74-4e99-917e-7b1e8b76ab9d
+              type: emailSignupForm
+              _pattern: 30e4b2d9-9999-4c59-ab1e-a8d83528d448
+        parameters:
+          trackingEventName:
+            type: text
+            value: CTA P13N
+  _overrides:
+    685256be-af74-4e99-917e-7b1e8b76ab9d:
+      parameters:
+        objectFit:
+          type: select
+          value: cover
+    e2fbbf0a-9c1c-4e4f-a9ba-8f57f209b330:
+      parameters:
+        eyebrowText:
+          type: text
+          value: null
+created: '2023-12-12T20:34:11.608152+00:00'
+modified: '2023-12-12T20:34:11.608152+00:00'
+pattern: false
